@@ -7,7 +7,8 @@
             {{ post.title }}
           </h2>
           <p class="description">
-            {{ post.updatedAt }} /
+            {{ dateFormat(post.updatedAt) }}
+            /
             {{ post.reading_time }}
           </p>
           <p class="description">
@@ -22,7 +23,7 @@
 <script lang="ts">
 import { defineComponent, useContext, useAsync } from '@nuxtjs/composition-api'
 import { IContentDocument } from '@nuxt/content/types/content'
-import { toJPFormat } from '../utils/format'
+import { dateFormat } from '../utils/format'
 
 export default defineComponent({
   setup() {
@@ -38,7 +39,7 @@ export default defineComponent({
 
     return {
       posts,
-      toJPFormat,
+      dateFormat,
     }
   },
 })

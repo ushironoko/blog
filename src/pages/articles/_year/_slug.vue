@@ -10,7 +10,7 @@ import { IContentDocument } from '@nuxt/content/types/content'
 
 export default Vue.extend({
   async asyncData({ $content, route }) {
-    const post = await $content(`${route.path}`).sortBy('date', 'desc').fetch()
+    const post = await $content(`${route.path}`).fetch()
     return {
       post,
     }

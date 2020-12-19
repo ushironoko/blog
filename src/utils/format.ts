@@ -1,2 +1,2 @@
-export const toJPFormat = (date: Date | number) =>
-  new Intl.DateTimeFormat('jp').format(date)
+import dayjs from 'dayjs'
+export const dateFormat = (date: Date) => dayjs(date).format('YYYY/MM/DD HH:mm')
