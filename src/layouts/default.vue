@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <TheHeader />
-      <main>
+      <main class="font-light">
         <Nuxt />
       </main>
     </div>
@@ -11,6 +11,6 @@
 
 <style lang="postcss" scoped>
 .container {
-  @apply container max-w-screen-md mx-auto py-4 px-4 leading-loose;
+  @apply max-w-screen-sm mx-auto py-4 px-4 leading-loose;
 }
 </style>
