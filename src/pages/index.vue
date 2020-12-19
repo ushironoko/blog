@@ -1,11 +1,11 @@
 <template>
-  <div class="container">
-    <div v-for="(post, i) in posts" :key="i">
+  <main>
+    <section v-for="(post, i) in posts" :key="i">
       <div>
         <NuxtLink :to="post.path">{{ post.title }}</NuxtLink>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 </template>
 
 <script lang="ts">
@@ -14,7 +14,10 @@ import { IContentDocument } from '@nuxt/content/types/content'
 
 export default Vue.extend({
   async asyncData({ $content }) {
-    const posts = await $content('articles/2020').sortBy('date', 'desc').fetch()
+    const posts = await $content('articles/2020')
+      .sortBy('date', 'desc')
+      .limit(10)
+      .fetch()
     return {
       posts,
     }
