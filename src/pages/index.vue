@@ -6,14 +6,7 @@
           <h2 class="mb-2">
             {{ post.title }}
           </h2>
-          <p class="description">
-            {{ dateFormat(post.updatedAt) }}
-            /
-            {{ post.reading_time }}
-          </p>
-          <p class="description">
-            {{ post.slug }}
-          </p>
+          <TheDescriptions :post="post" />
         </NuxtLink>
       </section>
     </template>
@@ -23,7 +16,6 @@
 <script lang="ts">
 import { defineComponent, useContext, useAsync } from '@nuxtjs/composition-api'
 import { IContentDocument } from '@nuxt/content/types/content'
-import { dateFormat } from '../utils/format'
 
 export default defineComponent({
   setup() {
@@ -39,14 +31,7 @@ export default defineComponent({
 
     return {
       posts,
-      dateFormat,
     }
   },
 })
 </script>
-
-<style lang="postcss" scoped>
-.description {
-  @apply text-gray-600 text-sm;
-}
-</style>

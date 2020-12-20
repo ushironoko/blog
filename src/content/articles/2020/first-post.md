@@ -1,7 +1,7 @@
 ---
 title: ブログを作りました
-description: 'うしろのこのブログ'
-reading_time: 3 min read
+description: '初投稿です'
+reading_time: 1 min read
 ---
 
 `@nuxt/content` モジュールを使ったブログを作った。

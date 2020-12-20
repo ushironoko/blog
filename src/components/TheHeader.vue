@@ -1,7 +1,7 @@
 <template>
-  <header class="flex justify-between w-full top-0 pb-8">
+  <header class="flex justify-between w-full top-0 pb-10 font-mono">
     <nuxt-link class="no-underline hover:no-underline" to="/">
-      <p class="text-black text-2xl font-extrabold">ushironoko blog</p>
+      <p class="text-black text-2xl font-extrabold">back boy</p>
     </nuxt-link>
   </header>
 </template>
