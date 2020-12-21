@@ -18,7 +18,13 @@ const config: NuxtConfig = {
           'ushironokoのブログです。日常から技術の話までなんでも書きます。',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/ushironoko.jpg' }],
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/articles/images/ushironoko.jpg',
+      },
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)

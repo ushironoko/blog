@@ -10,12 +10,19 @@
 <script lang="ts">
 import { IContentDocument } from '@nuxt/content/types/content'
 import { defineComponent, useContext, useAsync } from '@nuxtjs/composition-api'
+import { fetchArticle } from '~/composables/fetch'
 
 export default defineComponent({
   setup() {
-    const { $content, route } = useContext()
+    const { $content } = useContext()
+
     const post = useAsync(async () => {
-      return (await $content(route.value.path).fetch()) as IContentDocument
+      const { params } = useContext()
+      return (await fetchArticle(
+        params.value.year,
+        params.value.slug,
+        $content
+      )) as IContentDocument
     })
 
     return {
