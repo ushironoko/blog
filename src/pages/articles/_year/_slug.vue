@@ -18,11 +18,7 @@ export default defineComponent({
 
     const post = useAsync(async () => {
       const { params } = useContext()
-      return (await fetchArticle(
-        params.value.year,
-        params.value.slug,
-        $content
-      )) as IContentDocument
+      return (await fetchArticle(params, $content)) as IContentDocument
     })
 
     return {
