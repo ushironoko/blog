@@ -15,7 +15,7 @@ export default defineComponent({
   setup() {
     const { $content, route } = useContext()
     const post = useAsync(async () => {
-      return (await $content(`${route.value.path}`).fetch()) as IContentDocument
+      return (await $content(route.value.path).fetch()) as IContentDocument
     })
 
     return {
