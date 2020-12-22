@@ -1,10 +1,12 @@
 <template>
-  <div>
-    <p class="description">
+  <div class="description">
+    <p>
       {{ dateFormat(post.updatedAt) }}
       / ⏳ {{ post.reading_time }}
     </p>
-    <p class="description">{{ post.description }}</p>
+    <p v-if="isShowDescription">
+      {{ post.description }}
+    </p>
   </div>
 </template>
 
@@ -19,6 +21,10 @@ export default defineComponent({
       type: Object as PropType<IContentDocument>,
       required: true,
     },
+    isShowDescription: {
+      type: Boolean,
+      default: true,
+    },
   },
   setup() {
     return {
@@ -31,5 +37,6 @@ export default defineComponent({
 <style lang="postcss" scoped>
 .description {
   @apply text-gray-600 text-sm;
+  @apply mb-4;
 }
 </style>

@@ -1,6 +1,8 @@
 <template>
   <article class="prose">
     <template v-if="post">
+      <h1>{{ post.title }}</h1>
+      <TheDescriptions :post="post" :is-show-description="false" />
       <NuxtContent :document="post" />
     </template>
     <div class="mt-8 flex">

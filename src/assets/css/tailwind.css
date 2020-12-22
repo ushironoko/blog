@@ -1,8 +1,25 @@
 @tailwind components;
 @tailwind utilities;
+@tailwind base;
 
 body {
   overflow-y: overlay;
+}
+
+ul {
+  @apply list-disc;
+  @apply list-inside;
+}
+
+h1 {
+  @apply font-medium;
+  @apply text-2xl;
+}
+
+h2 {
+  @apply font-medium;
+  @apply text-xl;
+  @apply my-2;
 }
 
 a {
