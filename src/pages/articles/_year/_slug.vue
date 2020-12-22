@@ -1,9 +1,32 @@
 <template>
-  <article>
+  <article class="prose">
     <template v-if="post">
-      <h1 class="mb-2 text-2xl">{{ post.title }}</h1>
       <NuxtContent :document="post" />
     </template>
+    <div class="mt-8 flex">
+      <div>
+        <a
+          href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+          class="twitter-share-button"
+          data-show-count="false"
+        ></a>
+      </div>
+      <div class="ml-2">
+        <a
+          href="https://b.hatena.ne.jp/entry/"
+          class="hatena-bookmark-button"
+          data-hatena-bookmark-layout="basic-label"
+          data-hatena-bookmark-lang="ja"
+          title="このエントリーをはてなブックマークに追加"
+          ><img
+            src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png"
+            alt="このエントリーをはてなブックマークに追加"
+            width="20"
+            height="20"
+            style="border: none"
+        /></a>
+      </div>
+    </div>
   </article>
 </template>
 
@@ -27,3 +50,11 @@ export default defineComponent({
   },
 })
 </script>
+
+<style lang="postcss" scoped>
+.nuxt-content {
+  a {
+    text-decoration: none;
+  }
+}
+</style>

@@ -1,0 +1,19 @@
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-y: overlay;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nuxt-content a {
+  color: #0000ee;
+}
+
+.nuxt-content a:visited {
+  color: #551a8b;
+}
