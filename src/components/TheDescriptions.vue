@@ -2,10 +2,9 @@
   <div>
     <p class="description">
       {{ dateFormat(post.updatedAt) }}
-      /
-      {{ post.reading_time }}
+      / ⏳ {{ post.reading_time }}
     </p>
-    <p class="description">{{ post.slug }}</p>
+    <p class="description">{{ post.description }}</p>
   </div>
 </template>
 

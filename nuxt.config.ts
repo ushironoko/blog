@@ -25,6 +25,14 @@ const config: NuxtConfig = {
         href: '/articles/images/ushironoko.jpg',
       },
     ],
+    script: [
+      {
+        src: 'https://b.st-hatena.com/js/bookmark_button.js',
+      },
+      {
+        src: 'https://platform.twitter.com/widgets.js',
+      },
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -50,6 +58,16 @@ const config: NuxtConfig = {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
   ],
+
+  hooks: {
+    'content:file:beforeInsert': (document) => {
+      if (document.extension === '.md') {
+        const { text } = require('reading-time')(document.text)
+
+        document.reading_time = text
+      }
+    },
+  },
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
