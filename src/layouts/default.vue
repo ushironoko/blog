@@ -11,6 +11,6 @@
 
 <style lang="postcss" scoped>
 .container {
-  @apply max-w-screen-sm mx-auto py-4 px-4 leading-loose text-lg;
+  @apply max-w-screen-sm mx-auto py-4 px-4 leading-loose text-base;
 }
 </style>
