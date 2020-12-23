@@ -1,5 +1,5 @@
 <template>
-  <article class="prose">
+  <article>
     <template v-if="post">
       <h1>{{ post.title }}</h1>
       <TheDescriptions :post="post" :is-show-description="false" />
@@ -52,11 +52,3 @@ export default defineComponent({
   },
 })
 </script>
-
-<style lang="postcss" scoped>
-.nuxt-content {
-  a {
-    text-decoration: none;
-  }
-}
-</style>

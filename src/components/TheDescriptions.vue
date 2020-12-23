@@ -37,6 +37,6 @@ export default defineComponent({
 <style lang="postcss" scoped>
 .description {
   @apply text-gray-600 text-sm;
-  @apply mb-4;
+  @apply mb-8;
 }
 </style>

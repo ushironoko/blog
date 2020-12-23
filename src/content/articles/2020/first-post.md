@@ -7,7 +7,6 @@ description: '初投稿です'
 `@nuxt/content` モジュールを使ったブログを作ってみました。ここ最近本当になにか作るということをしておらず、2.10以降増えたNuxtのAPI周りすら把握していなかったのでこれはいかんと思い、友人が絶賛していたcontentモジュールを使って簡単なブログを作ってみました。
 
 技術スタックこんな感じ
-
 - フレームワーク: [Nuxt.js](https://ja.nuxtjs.org/) + [@nuxtjs/composition-api](https://github.com/nuxt-community/composition-api)
 - CMS: [@nuxt/content](https://content.nuxtjs.org/)
 - Host: [vercel](https://vercel.com/)
