@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <div>
     <template v-if="posts">
       <section v-for="(post, i) in posts" :key="i" class="mb-4">
         <NuxtLink :to="post.path">
@@ -10,7 +10,7 @@
         </NuxtLink>
       </section>
     </template>
-  </main>
+  </div>
 </template>
 
 <script lang="ts">

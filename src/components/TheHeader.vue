@@ -1,7 +1,19 @@
 <template>
-  <header class="flex justify-between font-mono w-full mb-6 h-12">
+  <header class="flex justify-between items-center font-mono w-full mb-6 h-12">
     <nuxt-link class="no-underline hover:no-underline" to="/">
       <p class="text-black text-2xl font-extrabold">ushironoko.me</p>
     </nuxt-link>
+    <div>
+      <a target="_blunk" rel="noopener" href="https://twitter.com/ushiro_noko"
+        ><button>Twitter</button></a
+      >
+      <a
+        class="mr-2"
+        target="_blunk"
+        rel="noopener"
+        href="https://ushironoko.me/feed.xml"
+        ><button>RSS</button></a
+      >
+    </div>
   </header>
 </template>

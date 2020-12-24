@@ -2,6 +2,38 @@ import { NuxtConfig } from '@nuxt/types'
 import readingTime from 'reading-time'
 import { getConfig } from './src/config'
 
+let posts: any[] = []
+
+const constructFeedItem = (post: any, dir: string, hostname: string) => {
+  const url = `${hostname}/${dir}/${post.slug}`
+  return {
+    title: post.title,
+    id: url,
+    link: url,
+    description: post.description,
+    content: post.bodyPlainText,
+  }
+}
+
+const create = async (feed: any, args: any) => {
+  const [filePath, ext] = args
+  const hostname = conf.origin
+  feed.options = {
+    title: 'ushironoko.me',
+    description: 'ushironoko.me RSS feed',
+    link: `${hostname}/feed.${ext}`,
+  }
+  const { $content } = require('@nuxt/content')
+  if (posts === null || posts.length === 0)
+    posts = await $content(filePath, { deep: true }).fetch()
+
+  for (const post of posts) {
+    const feedItem = constructFeedItem(post, filePath, hostname)
+    feed.addItem(feedItem)
+  }
+  return feed
+}
+
 const conf = getConfig()
 
 const config: NuxtConfig = {
@@ -63,6 +95,17 @@ const config: NuxtConfig = {
     '@nuxt/content',
     '~/modules/sitemap',
     ['@nuxtjs/sitemap', { hostname: conf.origin }],
+    '@nuxtjs/feed',
+  ],
+
+  feed: [
+    {
+      path: '/feed.xml',
+      create,
+      cacheTime: 1000 * 60 * 15,
+      type: 'rss2',
+      data: ['articles', 'xml'],
+    },
   ],
 
   hooks: {

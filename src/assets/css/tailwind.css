@@ -17,6 +17,10 @@
     @apply text-2xl;
   }
 
+  main h2 {
+    @apply text-xl;
+  }
+
   a {
     @apply no-underline;
     color: inherit;
