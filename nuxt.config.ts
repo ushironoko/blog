@@ -1,4 +1,7 @@
 import { NuxtConfig } from '@nuxt/types'
+import { getConfig } from './src/config'
+
+const conf = getConfig()
 
 const config: NuxtConfig = {
   srcDir: 'src',
@@ -7,7 +10,7 @@ const config: NuxtConfig = {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'ushironoko-blog',
+    title: 'ushironoko.me',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -57,6 +60,8 @@ const config: NuxtConfig = {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '~/modules/sitemap',
+    ['@nuxtjs/sitemap', { hostname: conf.origin }],
   ],
 
   hooks: {

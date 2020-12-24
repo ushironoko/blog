@@ -13,7 +13,7 @@
 <script lang="ts">
 import { IContentDocument } from '@nuxt/content/types/content'
 import { defineComponent, PropType } from '@nuxtjs/composition-api'
-import { dateFormat } from '../utils/format'
+import { dateFormat } from '~/utils/format'
 
 export default defineComponent({
   props: {

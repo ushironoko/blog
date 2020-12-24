@@ -5,7 +5,7 @@
       <TheDescriptions :post="post" :is-show-description="false" />
       <NuxtContent :document="post" />
     </template>
-    <div class="mt-8 flex">
+    <div class="my-8 flex">
       <div>
         <a
           href="https://twitter.com/share?ref_src=twsrc%5Etfw"
