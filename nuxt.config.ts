@@ -1,4 +1,5 @@
 import { NuxtConfig } from '@nuxt/types'
+import readingTime from 'reading-time'
 import { getConfig } from './src/config'
 
 const conf = getConfig()
@@ -67,7 +68,7 @@ const config: NuxtConfig = {
   hooks: {
     'content:file:beforeInsert': (document) => {
       if (document.extension === '.md') {
-        const { text } = require('reading-time')(document.text)
+        const { text } = readingTime(document.slug)
 
         document.reading_time = text
       }
