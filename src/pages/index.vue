@@ -22,7 +22,7 @@ export default defineComponent({
     const { $content } = useContext()
     const posts = useAsync(async () => {
       const posts = await $content('articles', { deep: true })
-        .sortBy('createdAt', 'asc')
+        .sortBy('createdAt', 'desc')
         .limit(10)
         .fetch()
 
