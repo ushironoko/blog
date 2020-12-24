@@ -38,6 +38,37 @@ import { defineComponent, useContext, useAsync } from '@nuxtjs/composition-api'
 import { fetchArticle } from '~/composables/fetch'
 
 export default defineComponent({
+  head() {
+    return {
+      title: 'ushironoko.me',
+      meta: [
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        {
+          name: 'twitter:site',
+          content: '@ushirono_noko',
+        },
+        {
+          property: 'og:url',
+          content: `https://ushironoko.me${(this.post as any).path}`,
+        },
+        {
+          property: 'og:title',
+          content: (this.post as any).title,
+        },
+        {
+          property: 'og:description',
+          content: (this.post as any).description,
+        },
+        {
+          property: 'og:image',
+          content: 'https://ushironoko.me/articles/images/ushironoko.jpg',
+        },
+      ],
+    }
+  },
   setup() {
     const { $content } = useContext()
 
