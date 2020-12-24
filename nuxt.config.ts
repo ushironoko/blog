@@ -76,7 +76,7 @@ const config: NuxtConfig = {
       },
       {
         property: 'og:image',
-        content: '/articles/images/ushironoko.jpg',
+        content: 'https://ushironoko.me/articles/images/ushironoko.jpg',
       },
     ],
     link: [
