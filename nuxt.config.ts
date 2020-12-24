@@ -53,6 +53,31 @@ const config: NuxtConfig = {
         content:
           'ushironokoのブログです。日常から技術の話までなんでも書きます。',
       },
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        name: 'twitter:site',
+        content: '@ushirono_noko',
+      },
+      {
+        property: 'og:url',
+        content: 'https://ushironoko.me',
+      },
+      {
+        property: 'og:title',
+        content: 'ushironoko.me',
+      },
+      {
+        property: 'og:description',
+        content:
+          'ushironokoのブログです。日常から技術の話までなんでも書きます。',
+      },
+      {
+        property: 'og:image',
+        content: '/articles/images/ushironoko.jpg',
+      },
     ],
     link: [
       {
