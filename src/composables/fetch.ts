@@ -29,7 +29,7 @@ export const fetchArticles = async (): Promise<IContentDocument[]> => {
   const { $content } = useContext()
 
   const res = await $content('articles', { deep: true })
-    .sortBy('createdAt', 'desc')
+    .sortBy('publishedAt', 'desc')
     .fetch()
 
   return !Array.isArray(res) ? [res] : res
