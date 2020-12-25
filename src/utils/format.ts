@@ -1,2 +1,2 @@
 import dayjs from 'dayjs'
-export const dateFormat = (date: Date) => dayjs(date).format('YYYY/MM/DD HH:mm')
+export const dateFormat = (date: Date) => dayjs(date).format('YYYY/MM/DD')

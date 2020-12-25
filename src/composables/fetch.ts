@@ -8,8 +8,6 @@ export const fetchArticle = async (): Promise<IContentDocument> => {
   const path = ['articles', year, slug].join('/')
   const content = await $content(path, { deep: true }).fetch()
 
-  console.log(content)
-
   if (Array.isArray(content)) {
     return Promise.reject(
       new Error(
