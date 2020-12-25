@@ -3,6 +3,8 @@ import readingTime from 'reading-time'
 
 let posts: any[] = []
 
+const baseURL = process.env.ORIGIN || 'http://localhost:3000'
+
 const constructFeedItem = (post: any, dir: string, hostname: string) => {
   const url = `${hostname}/${dir}/${post.slug}`
   return {
@@ -16,18 +18,17 @@ const constructFeedItem = (post: any, dir: string, hostname: string) => {
 
 const create = async (feed: any, args: any) => {
   const [filePath, ext] = args
-  const hostname = process.env.ORIGIN || 'http://localhost:3000'
   feed.options = {
     title: 'ushironoko.me',
     description: 'ushironoko.me RSS feed',
-    link: `${hostname}/feed.${ext}`,
+    link: `${baseURL}/feed.${ext}`,
   }
   const { $content } = require('@nuxt/content')
   if (posts === null || posts.length === 0)
     posts = await $content(filePath, { deep: true }).fetch()
 
   for (const post of posts) {
-    const feedItem = constructFeedItem(post, filePath, hostname)
+    const feedItem = constructFeedItem(post, filePath, baseURL)
     feed.addItem(feedItem)
   }
   return feed
@@ -60,7 +61,7 @@ const config: NuxtConfig = {
       },
       {
         property: 'og:url',
-        content: 'https://ushironoko.me',
+        content: `${baseURL}`,
       },
       {
         property: 'og:title',
@@ -73,7 +74,7 @@ const config: NuxtConfig = {
       },
       {
         property: 'og:image',
-        content: 'https://ushironoko.me/articles/images/ushironoko.jpg',
+        content: `${baseURL}/articles/images/ushironoko.jpg`,
       },
     ],
     link: [
@@ -108,7 +109,7 @@ const config: NuxtConfig = {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     '~/modules/sitemap',
-    ['@nuxtjs/sitemap', { hostname: process.env.ORIGIN }],
+    ['@nuxtjs/sitemap', { hostname: baseURL }],
     '@nuxtjs/feed',
   ],
 
@@ -138,7 +139,7 @@ const config: NuxtConfig = {
   build: {},
 
   publicRuntimeConfig: {
-    baseURL: process.env.ORIGIN || 'http://localhost:3000',
+    baseURL,
   },
 }
 
