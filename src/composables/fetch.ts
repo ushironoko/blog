@@ -1,10 +1,12 @@
 import { IContentDocument } from '@nuxt/content/types/content'
 import { useContext } from '@nuxtjs/composition-api'
-import { getOrigin } from '~/config/getOrigin'
 
 export const fetchArticle = async (): Promise<IContentDocument> => {
-  const { $content, params } = useContext()
-  const origin = getOrigin()
+  const {
+    $content,
+    params,
+    $config: { baseURL },
+  } = useContext()
 
   const { year, slug } = params.value
   const path = ['articles', year, slug].join('/')
@@ -20,7 +22,7 @@ export const fetchArticle = async (): Promise<IContentDocument> => {
     )
   }
 
-  const content = addTwitterLink(res, origin)
+  const content = addTwitterLink(res, baseURL)
 
   return content
 }
@@ -35,8 +37,8 @@ export const fetchArticles = async (): Promise<IContentDocument[]> => {
   return !Array.isArray(res) ? [res] : res
 }
 
-function addTwitterLink(content: IContentDocument, origin: string) {
-  const twitterLink = `https://twitter.com/intent/tweet?text=${content.title}%0a${origin}${content.path}`
+function addTwitterLink(content: IContentDocument, baseURL: string) {
+  const twitterLink = `https://twitter.com/intent/tweet?text=${content.title}%0a${baseURL}${content.path}`
   content.twitterLink = twitterLink
   return {
     ...content,

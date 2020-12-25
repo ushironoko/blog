@@ -14,14 +14,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, useAsync } from '@nuxtjs/composition-api'
+import { defineComponent, useAsync, useContext } from '@nuxtjs/composition-api'
 import { fetchArticles } from '~/composables/fetch'
 
 export default defineComponent({
   setup() {
+    const { route } = useContext()
     const posts = useAsync(async () => {
       return await fetchArticles()
-    })
+    }, route.value.fullPath)
 
     return {
       posts,

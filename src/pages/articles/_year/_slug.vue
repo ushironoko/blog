@@ -24,13 +24,14 @@ import {
   useContext,
 } from '@nuxtjs/composition-api'
 import { fetchArticle } from '~/composables/fetch'
-import { getOrigin } from '~/config/getOrigin'
 
 export default defineComponent({
   head: {},
   setup() {
-    const origin = getOrigin()
-    const { route } = useContext()
+    const {
+      route,
+      $config: { baseURL },
+    } = useContext()
     const post = useAsync(async () => {
       return await fetchArticle()
     }, route.value.fullPath)
@@ -48,7 +49,7 @@ export default defineComponent({
         },
         {
           property: 'og:url',
-          content: `${origin}${post?.value?.path || origin}`,
+          content: `${baseURL}${post?.value?.path || baseURL}`,
         },
         {
           property: 'og:title',
@@ -62,7 +63,7 @@ export default defineComponent({
         },
         {
           property: 'og:image',
-          content: `${origin}/articles/images/ushironoko.jpg`,
+          content: `${baseURL}/articles/images/ushironoko.jpg`,
         },
       ],
     }))

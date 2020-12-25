@@ -1,8 +1,5 @@
 import { NuxtConfig } from '@nuxt/types'
 import readingTime from 'reading-time'
-import { getOrigin } from './src/config/getOrigin'
-
-const origin = getOrigin()
 
 let posts: any[] = []
 
@@ -19,7 +16,7 @@ const constructFeedItem = (post: any, dir: string, hostname: string) => {
 
 const create = async (feed: any, args: any) => {
   const [filePath, ext] = args
-  const hostname = origin
+  const hostname = process.env.ORIGIN || 'http://localhost:3000'
   feed.options = {
     title: 'ushironoko.me',
     description: 'ushironoko.me RSS feed',
@@ -111,7 +108,7 @@ const config: NuxtConfig = {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     '~/modules/sitemap',
-    ['@nuxtjs/sitemap', { hostname: origin }],
+    ['@nuxtjs/sitemap', { hostname: process.env.ORIGIN }],
     '@nuxtjs/feed',
   ],
 
@@ -139,6 +136,10 @@ const config: NuxtConfig = {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
+
+  publicRuntimeConfig: {
+    baseURL: process.env.ORIGIN || 'http://localhost:3000',
+  },
 }
 
 export default config
