@@ -86,14 +86,6 @@ const config: NuxtConfig = {
         href: '/articles/images/ushironoko.jpg',
       },
     ],
-    script: [
-      {
-        src: 'https://b.st-hatena.com/js/bookmark_button.js',
-      },
-      {
-        src: 'https://platform.twitter.com/widgets.js',
-      },
-    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
