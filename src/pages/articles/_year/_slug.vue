@@ -53,12 +53,12 @@ export default defineComponent({
         },
         {
           property: 'og:title',
-          content: post?.value?.post?.title || 'ushironoko.me',
+          content: post?.value?.title || 'ushironoko.me',
         },
         {
           property: 'og:description',
           content:
-            post?.value?.post?.description ||
+            post?.value?.description ||
             'ushironokoのブログです。日常から技術の話までなんでも書きます。',
         },
         {
