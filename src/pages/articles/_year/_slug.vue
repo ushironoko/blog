@@ -4,16 +4,15 @@
       <h1>{{ post.title }}</h1>
       <TheDescriptions :post="post" :is-show-description="false" />
       <NuxtContent :document="post" />
-    </template>
-    <div class="my-8 flex">
-      <div>
-        <a
-          href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-          class="twitter-share-button"
-          data-show-count="false"
-        ></a>
+      <div class="my-12 flex justify-center">
+        <a :href="post.twitterLink" target="_blank" rel="noopener"
+          ><img
+            style="width: 24px"
+            class="text-gray-900"
+            src="/Twitter_Social_Icon_Circle_White.svg"
+        /></a>
       </div>
-    </div>
+    </template>
   </article>
 </template>
 
@@ -25,10 +24,12 @@ import {
   useContext,
 } from '@nuxtjs/composition-api'
 import { fetchArticle } from '~/composables/fetch'
+import { getOrigin } from '~/config/getOrigin'
 
 export default defineComponent({
   head: {},
   setup() {
+    const origin = getOrigin()
     const { route } = useContext()
     const post = useAsync(async () => {
       return await fetchArticle()
@@ -47,21 +48,21 @@ export default defineComponent({
         },
         {
           property: 'og:url',
-          content: `${process.env.ORIGIN}${
-            post?.value?.path || process.env.ORIGIN
-          }`,
+          content: `${origin}${post?.value?.path || origin}`,
         },
         {
           property: 'og:title',
-          content: post?.value?.title || process.env.ORIGIN,
+          content: post?.value?.post?.title || 'ushironoko.me',
         },
         {
           property: 'og:description',
-          content: post?.value?.description || process.env.ORIGIN,
+          content:
+            post?.value?.post?.description ||
+            'ushironokoのブログです。日常から技術の話までなんでも書きます。',
         },
         {
           property: 'og:image',
-          content: `${process.env.ORIGIN}/articles/images/ushironoko.jpg`,
+          content: `${origin}/articles/images/ushironoko.jpg`,
         },
       ],
     }))
