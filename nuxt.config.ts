@@ -136,8 +136,7 @@ const config: NuxtConfig = {
   hooks: {
     'content:file:beforeInsert': (document) => {
       if (document.extension === '.md') {
-        const { text } = readingTime(document.slug)
-
+        const { text } = readingTime(document.text)
         document.reading_time = text
       }
     },

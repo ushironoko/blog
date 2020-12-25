@@ -1,17 +1,16 @@
-import { contentFunc, IContentDocument } from '@nuxt/content/types/content'
-import { Ref } from '@nuxtjs/composition-api'
-import { Route } from 'vue-router'
+import { IContentDocument } from '@nuxt/content/types/content'
+import { useContext } from '@nuxtjs/composition-api'
 
-export const fetchArticle = async (
-  params: Ref<Route['params']>,
-  $content: contentFunc
-): Promise<IContentDocument> => {
+export const fetchArticle = async (): Promise<IContentDocument> => {
+  const { $content, params } = useContext()
+
   const { year, slug } = params.value
   const path = ['articles', year, slug].join('/')
+  const content = await $content(path, { deep: true }).fetch()
 
-  const page = await $content(path).fetch()
+  console.log(content)
 
-  if (Array.isArray(page)) {
+  if (Array.isArray(content)) {
     return Promise.reject(
       new Error(
         'Multiple Articles exist. Please fix it so that the content retrieved is unique.'
@@ -19,5 +18,15 @@ export const fetchArticle = async (
     )
   }
 
-  return page
+  return content
+}
+
+export const fetchArticles = async (): Promise<IContentDocument[]> => {
+  const { $content } = useContext()
+
+  const res = await $content('articles', { deep: true })
+    .sortBy('createdAt', 'desc')
+    .fetch()
+
+  return !Array.isArray(res) ? [res] : res
 }

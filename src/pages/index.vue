@@ -14,19 +14,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, useContext, useAsync } from '@nuxtjs/composition-api'
-import { IContentDocument } from '@nuxt/content/types/content'
+import { defineComponent, useAsync } from '@nuxtjs/composition-api'
+import { fetchArticles } from '~/composables/fetch'
 
 export default defineComponent({
   setup() {
-    const { $content } = useContext()
     const posts = useAsync(async () => {
-      const posts = await $content('articles', { deep: true })
-        .sortBy('createdAt', 'desc')
-        .limit(10)
-        .fetch()
-
-      return posts as IContentDocument[]
+      return await fetchArticles()
     })
 
     return {

@@ -33,13 +33,23 @@
 </template>
 
 <script lang="ts">
-import { IContentDocument } from '@nuxt/content/types/content'
-import { defineComponent, useContext, useAsync } from '@nuxtjs/composition-api'
+import {
+  defineComponent,
+  useAsync,
+  useMeta,
+  useContext,
+} from '@nuxtjs/composition-api'
 import { fetchArticle } from '~/composables/fetch'
 
 export default defineComponent({
-  head() {
-    return {
+  head: {},
+  setup() {
+    const { route } = useContext()
+    const post = useAsync(async () => {
+      return await fetchArticle()
+    }, route.value.fullPath)
+
+    useMeta(() => ({
       title: 'ushironoko.me',
       meta: [
         {
@@ -52,30 +62,24 @@ export default defineComponent({
         },
         {
           property: 'og:url',
-          content: `https://ushironoko.me${(this.post as any).path}`,
+          content: `${process.env.ORIGIN}${
+            post?.value?.path || process.env.ORIGIN
+          }`,
         },
         {
           property: 'og:title',
-          content: (this.post as any).title,
+          content: post?.value?.title || process.env.ORIGIN,
         },
         {
           property: 'og:description',
-          content: (this.post as any).description,
+          content: post?.value?.description || process.env.ORIGIN,
         },
         {
           property: 'og:image',
-          content: 'https://ushironoko.me/articles/images/ushironoko.jpg',
+          content: `${process.env.ORIGIN}/articles/images/ushironoko.jpg`,
         },
       ],
-    }
-  },
-  setup() {
-    const { $content } = useContext()
-
-    const post = useAsync(async () => {
-      const { params } = useContext()
-      return (await fetchArticle(params, $content)) as IContentDocument
-    })
+    }))
 
     return {
       post,
