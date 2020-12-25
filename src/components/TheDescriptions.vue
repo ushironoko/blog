@@ -2,7 +2,6 @@
   <div class="description">
     <p>
       {{ dateFormat(post.publishedAt) }}
-      <!-- {{ dateFormat(post.createdAt) }} -->
       / ⏳ {{ post.reading_time }}
     </p>
     <p v-if="isShowDescription">
