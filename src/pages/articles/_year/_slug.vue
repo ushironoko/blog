@@ -32,12 +32,13 @@ export default defineComponent({
       route,
       $config: { baseURL },
     } = useContext()
+
     const post = useAsync(async () => {
       return await fetchArticle()
     }, route.value.fullPath)
 
     useMeta(() => ({
-      title: 'ushironoko.me',
+      title: `${post?.value?.title || 'ブログ'} - ushironoko.me`,
       meta: [
         {
           name: 'twitter:card',
