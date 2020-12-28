@@ -4,6 +4,7 @@
   body {
     @apply break-words;
     overflow-y: overlay;
+    font-family: 'Hiragino Kaku Gothic', 'meiryo', sans-serif;
   }
 
   ul {
@@ -17,6 +18,16 @@
     @apply text-2xl;
   }
 
+  h3 {
+    @apply font-medium;
+    @apply text-lg;
+  }
+
+  h4 {
+    @apply font-medium;
+    @apply text-base;
+  }
+
   main h2 {
     @apply text-xl;
   }
@@ -24,6 +35,15 @@
   a {
     @apply no-underline;
     color: inherit;
+  }
+
+  blockquote {
+    @apply p-2;
+    @apply italic;
+    @apply border-l-4;
+    @apply bg-gray-100;
+    @apply text-gray-600;
+    @apply border-gray-500;
   }
 
   .nuxt-content a {
