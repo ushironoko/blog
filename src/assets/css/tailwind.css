@@ -4,7 +4,6 @@
   body {
     @apply break-words;
     overflow-y: overlay;
-    font-family: 'Hiragino Kaku Gothic', 'meiryo', sans-serif;
   }
 
   ul {
