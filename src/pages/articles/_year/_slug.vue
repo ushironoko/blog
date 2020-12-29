@@ -7,9 +7,11 @@
       <div class="my-12 flex justify-center">
         <a :href="post.twitterLink" target="_blank" rel="noopener"
           ><img
-            style="width: 24px"
+            width="24px"
+            height="24px"
             class="text-gray-900"
             src="/Twitter_Social_Icon_Circle_White.svg"
+            alt=""
         /></a>
       </div>
     </template>
