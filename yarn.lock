@@ -10121,6 +10121,14 @@ regjsparser@^0.6.4:
   dependencies:
     jsesc "~0.5.0"
 
+rehype-plugin-image-native-lazy-loading@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/rehype-plugin-image-native-lazy-loading/-/rehype-plugin-image-native-lazy-loading-1.1.0.tgz#ae34703ab414db3e9480b72f0b51f8880ffc36fb"
+  integrity sha512-LJ6NsqOOcNfEYp2/nU5zJQlPUOYAgrQESeqAcANDm09rIrxuoDJd33IGIyccT7v0EUYrp5Z/9NUE/OKtlfpgNA==
+  dependencies:
+    unified "^9.2.0"
+    unist-util-visit "^2.0.3"
+
 rehype-raw@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/rehype-raw/-/rehype-raw-5.0.0.tgz#3688e3e1132e958761e677a1b9b2ba358a465af8"
@@ -11785,7 +11793,7 @@ unist-util-visit-parents@^3.0.0:
     "@types/unist" "^2.0.0"
     unist-util-is "^4.0.0"
 
-unist-util-visit@^2.0.0:
+unist-util-visit@^2.0.0, unist-util-visit@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-2.0.3.tgz#c3703893146df47203bb8a9795af47d7b971208c"
   integrity sha512-iJ4/RczbJMkD0712mGktuGpm/U4By4FfDonL7N/9tATGIF4imikjOuagyMY53tnZq3NP6BcmlrHhEKAfGWjh7Q==

@@ -27,7 +27,8 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
-    "reading-time": "^1.2.1"
+    "reading-time": "^1.2.1",
+    "rehype-plugin-image-native-lazy-loading": "^1.1.0"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.6",

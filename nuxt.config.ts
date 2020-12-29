@@ -116,7 +116,11 @@ const config: NuxtConfig = {
   },
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
-  content: {},
+  content: {
+    markdown: {
+      rehypePlugins: ['rehype-plugin-image-native-lazy-loading'],
+    },
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
