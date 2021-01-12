@@ -109,7 +109,19 @@ const config: NuxtConfig = {
   hooks: {
     'content:file:beforeInsert': (document) => {
       if (document.extension === '.md') {
-        const { text } = readingTime(document.text)
+        let wordCount = 0
+        const { text } = readingTime(document.text, {
+          wordsPerMinute: 1000,
+          wordBound: (_) => {
+            if (wordCount === 2) {
+              wordCount = 0
+              return true
+            } else {
+              wordCount++
+              return false
+            }
+          },
+        })
         document.reading_time = text
       }
     },
