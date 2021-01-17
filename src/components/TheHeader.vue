@@ -5,14 +5,14 @@
     </nuxt-link>
     <div>
       <a target="_blunk" rel="noopener" href="https://twitter.com/ushiro_noko"
-        ><button>Twitter</button></a
+        >Twitter</a
       >
       <a
         class="mr-2"
         target="_blunk"
         rel="noopener"
         href="https://ushironoko.me/feed.xml"
-        ><button>RSS</button></a
+        >RSS</a
       >
     </div>
   </header>
