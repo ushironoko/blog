@@ -1,7 +1,7 @@
 ---
 title: ウルトラマンZ完走した感想
-description: 'よかったZ'
-publishedAt: '2021-01-04'
+description: よかったZ
+publishedAt: 2021-01-04
 ---
 
 ウルトラマンZテレビシリーズ完走したので感想です。
