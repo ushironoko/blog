@@ -2,7 +2,7 @@
 
 ushironoko blog.
 
-- Using by `@nuxt/context` + `@nuxtjs/compositionpia` + `@nuxtjs/tailwindcss`.
+- Using by `@nuxt/context` + `@nuxtjs/composition-api` + `@nuxtjs/tailwindcss`.
 - Full static generate and deploy to vercel.
 - RSS, sitemap, etc.
 
