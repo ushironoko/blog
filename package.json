@@ -28,6 +28,7 @@
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
     "reading-time": "^1.2.1",
+    "rehype-plugin-auto-resolve-layout-shift": "^1.0.0",
     "rehype-plugin-image-native-lazy-loading": "^1.1.0"
   },
   "devDependencies": {

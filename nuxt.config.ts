@@ -130,7 +130,13 @@ const config: NuxtConfig = {
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {
     markdown: {
-      rehypePlugins: ['rehype-plugin-image-native-lazy-loading'],
+      rehypePlugins: [
+        'rehype-plugin-image-native-lazy-loading',
+        [
+          'rehype-plugin-auto-resolve-layout-shift',
+          { type: 'maxWidth', maxWidth: 640 },
+        ],
+      ],
     },
   },
 
