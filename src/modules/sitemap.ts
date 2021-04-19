@@ -1,4 +1,4 @@
-import { defineNuxtModule } from '@nuxtjs/composition-api'
+import { defineNuxtModule } from '../utils/nuxt-helpers'
 
 const routes: string[] = []
 
