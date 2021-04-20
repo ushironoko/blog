@@ -1,65 +1,63 @@
 @tailwind base;
 
-@layer base {
-  body {
-    @apply break-words;
-    overflow-y: overlay;
-  }
+body {
+  @apply break-words;
+  overflow-y: overlay;
+}
 
-  ul {
-    @apply list-disc;
-    @apply list-inside;
-  }
+ul {
+  @apply list-disc;
+  @apply list-inside;
+}
 
-  h1,
-  h2 {
-    @apply font-medium;
-    @apply text-2xl;
-  }
+h1,
+h2 {
+  @apply font-medium;
+  @apply text-2xl;
+}
 
-  h3 {
-    @apply font-medium;
-    @apply text-lg;
-  }
+h3 {
+  @apply font-medium;
+  @apply text-lg;
+}
 
-  h4 {
-    @apply font-medium;
-    @apply text-base;
-  }
+h4 {
+  @apply font-medium;
+  @apply text-base;
+}
 
-  main h2 {
-    @apply text-xl;
-  }
+main h2 {
+  @apply text-xl;
+}
 
-  a {
-    @apply no-underline;
-    color: inherit;
-  }
+a {
+  @apply no-underline;
+  color: inherit;
+}
 
-  blockquote {
-    @apply p-2;
-    @apply italic;
-    @apply border-l-4;
-    @apply bg-gray-100;
-    @apply text-gray-600;
-    @apply border-gray-500;
-  }
+blockquote {
+  @apply p-2;
+  @apply italic;
+  @apply border-l-4;
+  @apply bg-gray-100;
+  @apply text-gray-600;
+  @apply border-gray-500;
+}
 
-  .nuxt-content a {
-    color: #0000ee;
-  }
+.nuxt-content a {
+  color: #0000ee;
+}
 
-  .nuxt-content a:visited {
-    color: #551a8b;
-  }
+.nuxt-content a:visited {
+  color: #551a8b;
+}
 
-  .nuxt-content {
-    @apply whitespace-pre-line;
-  }
+.nuxt-content {
+  @apply whitespace-pre-line;
+}
 
-  .nuxt-content ul {
-    @apply whitespace-normal;
-  }
+.nuxt-content ul {
+  @apply whitespace-normal;
 }
 
 @tailwind components;
