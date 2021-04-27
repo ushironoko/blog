@@ -128,11 +128,11 @@ const config: NuxtConfig = {
       }
     },
     generate: {
-      page: (html) => {
+      page: (page) => {
         const scriptTag = /<script[^>]+?\/>|<script(.|\s)*?\/script>/gi
         const linkTag = /<link[^>]+? as="script">/gi
-        const tmp = html.html.toString().replace(scriptTag, '')
-        html.html = tmp.toString().replace(linkTag, '')
+        const tmp = page.html.toString().replace(scriptTag, '')
+        page.html = tmp.toString().replace(linkTag, '')
       },
     },
   },
