@@ -127,6 +127,14 @@ const config: NuxtConfig = {
         document.reading_time = text
       }
     },
+    generate: {
+      page: (html) => {
+        const scriptTag = /<script[^>]+?\/>|<script(.|\s)*?\/script>/gi
+        const linkTag = /<link[^>]+? as="script">/gi
+        const tmp = html.html.toString().replace(scriptTag, '')
+        html.html = tmp.toString().replace(linkTag, '')
+      },
+    },
   },
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)

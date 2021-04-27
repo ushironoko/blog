@@ -1,8 +1,8 @@
 <template>
-  <header class="flex justify-between items-center font-mono w-full my-6">
-    <nuxt-link class="no-underline hover:no-underline" to="/">
-      <p class="text-black text-2xl font-extrabold">ushironoko.me</p>
-    </nuxt-link>
+  <header class="flex items-center justify-between w-full my-6 font-mono">
+    <a class="no-underline hover:no-underline" href="/">
+      <p class="text-2xl font-extrabold text-black">ushironoko.me</p>
+    </a>
     <div>
       <a target="_blunk" rel="noopener" href="https://twitter.com/ushiro_noko"
         >Twitter</a
