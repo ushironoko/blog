@@ -90,3 +90,23 @@ hooks: {
 ![](https://i.gyazo.com/8e9beb831c96037a5c3924e9308951ab.png)
 
 実際にはビルド時に js は生成されているため Next みたくランタイムを出力結果から消すわけではないが、html が読み込まないのでセーフ。実は `nuxt/content` で composition api を使った時に全てのページで `db.json` という検索クエリ発行時に参照するためのデータを読んでしまっており、json には全ページ分のデータが入っていて記事が増えるたびに重くなるという悩みがあった（本来 asyncData と fetch の外でクエリが呼ばれた時にしか参照しない）。今回の改善でついでに解消されてかなり早くなった。
+
+## 追記
+
+設定あるって教えてもらった（がっつりドキュメントに書いてある）。
+
+https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-render/#injectscripts
+
+```js
+  render: {
+    injectScripts: false,
+  },
+```
+
+とするだけでjsを読み込まないプレーンなHTMLを生成してくれる。ただし、自前で消していた時と同じようにランタイム自体は生成されるっぽい。
+
+![](https://i.gyazo.com/08851ad1147edda4727e05ef9f1e09cb.png)
+
+injectScriptsがfalseの場合、preload用のlinkタグとランタイム読み込み用のscriptタグの差し込みをスキップするようになってるっぽい。
+
+https://github.com/nuxt/nuxt.js/blob/07e97f168ab02a49d84db7c2279432677446d1eb/packages/vue-renderer/src/renderers/ssr.js#L180-L240
