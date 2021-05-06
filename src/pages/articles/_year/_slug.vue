@@ -1,7 +1,7 @@
 <template>
   <article>
     <template v-if="post">
-      <h1>{{ post.title }}</h1>
+      <h1 class="mb-2">{{ post.title }}</h1>
       <TheDescriptions :post="post" :is-show-description="false" />
       <NuxtContent :document="post" />
       <div class="flex justify-center my-12">

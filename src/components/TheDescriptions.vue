@@ -1,10 +1,9 @@
 <template>
-  <div class="description">
-    <p>
-      {{ dateFormat(post.publishedAt) }}
-      / ⏳ {{ post.reading_time }}
+  <div class="mb-8">
+    <p class="text-sm text-gray-500">
+      {{ dateFormat(post.publishedAt) }} ⏳ {{ post.reading_time }}
     </p>
-    <p v-if="isShowDescription">
+    <p v-if="isShowDescription" class="text-sm text-gray-500">
       {{ post.description }}
     </p>
   </div>
@@ -33,10 +32,3 @@ export default defineComponent({
   },
 })
 </script>
-
-<style lang="postcss" scoped>
-.description {
-  @apply text-gray-600 text-sm;
-  @apply mb-8;
-}
-</style>
