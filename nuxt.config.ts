@@ -79,10 +79,14 @@ const config: NuxtConfig = {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', ${process.env.GOOGLE_ANALYTICS_ID});
+          gtag('config', "${process.env.GOOGLE_ANALYTICS_ID}");
         `,
+        hid: 'ga-script',
       },
     ],
+    __dangerouslyDisableSanitizersByTagID: {
+      'ga-script': ['innerHTML'],
+    },
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
