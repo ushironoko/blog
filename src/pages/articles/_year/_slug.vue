@@ -4,7 +4,7 @@
       <h1>{{ post.title }}</h1>
       <TheDescriptions :post="post" :is-show-description="false" />
       <NuxtContent :document="post" />
-      <div class="my-12 flex justify-center">
+      <div class="flex justify-center my-12">
         <a :href="post.twitterLink" target="_blank" rel="noopener"
           ><img
             width="24px"
@@ -25,7 +25,7 @@ import {
   useMeta,
   useContext,
 } from '@nuxtjs/composition-api'
-import { fetchArticle } from '~/composables/fetch'
+import { useArticle } from '~/composables/articles'
 
 export default defineComponent({
   head: {},
@@ -33,7 +33,11 @@ export default defineComponent({
     const {
       route,
       $config: { baseURL },
+      $content,
+      params,
     } = useContext()
+
+    const { fetchArticle } = useArticle($content, params, baseURL as string)
 
     const post = useAsync(async () => {
       return await fetchArticle()

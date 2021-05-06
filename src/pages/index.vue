@@ -20,7 +20,7 @@ import {
   useContext,
   useMeta,
 } from '@nuxtjs/composition-api'
-import { fetchArticles } from '~/composables/fetch'
+import { useArticle } from '~/composables/articles'
 
 export default defineComponent({
   head: {},
@@ -28,10 +28,14 @@ export default defineComponent({
     const {
       route,
       $config: { baseURL },
+      $content,
+      params,
     } = useContext()
 
+    const { fetchAllArticles } = useArticle($content, params, baseURL as string)
+
     const posts = useAsync(async () => {
-      return await fetchArticles()
+      return await fetchAllArticles()
     }, route.value.fullPath)
 
     useMeta(() => ({
