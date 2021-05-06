@@ -60,5 +60,4 @@ blockquote {
   @apply whitespace-normal;
 }
 
-@tailwind components;
 @tailwind utilities;

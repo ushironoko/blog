@@ -127,6 +127,10 @@ const config: NuxtConfig = {
     },
   ],
 
+  tailwindcss: {
+    jit: true,
+  },
+
   hooks: {
     'content:file:beforeInsert': (document) => {
       if (document.extension === '.md') {
