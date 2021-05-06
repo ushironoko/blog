@@ -87,6 +87,7 @@ const config: NuxtConfig = {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/composition-api/module',
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -151,6 +152,9 @@ const config: NuxtConfig = {
 
   publicRuntimeConfig: {
     baseURL,
+    googleAnalytics: {
+      id: process.env.GOOGLE_ANALYTICS_ID,
+    },
   },
 }
 
