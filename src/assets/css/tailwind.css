@@ -11,17 +11,17 @@ ul {
 
 h1,
 h2 {
-  @apply font-medium;
+  @apply font-bold;
   @apply text-2xl;
 }
 
 h3 {
-  @apply font-medium;
+  @apply font-bold;
   @apply text-lg;
 }
 
 h4 {
-  @apply font-medium;
+  @apply font-bold;
   @apply text-base;
 }
 
@@ -30,7 +30,7 @@ main h2 {
 }
 
 main {
-  @apply font-medium;
+  @apply font-normal;
 }
 
 a {
