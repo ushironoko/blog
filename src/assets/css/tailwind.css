@@ -2,9 +2,6 @@
 
 body {
   @apply break-words;
-  overflow-y: overlay;
-  font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN',
-    'Hiragino Sans', Meiryo, sans-serif;
 }
 
 ul {
@@ -30,6 +27,10 @@ h4 {
 
 main h2 {
   @apply text-xl;
+}
+
+main {
+  @apply font-medium;
 }
 
 a {

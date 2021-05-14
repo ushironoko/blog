@@ -3,7 +3,7 @@
     <template v-if="post">
       <h1 class="mb-2">{{ post.title }}</h1>
       <TheDescriptions :post="post" :is-show-description="false" />
-      <NuxtContent :document="post" />
+      <NuxtContent class="content-font" :document="post" />
       <div class="flex justify-center my-12">
         <a :href="post.twitterLink" target="_blank" rel="noopener"
           ><img
@@ -81,3 +81,10 @@ export default defineComponent({
   },
 })
 </script>
+
+<style scoped>
+.content-font {
+  font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN',
+    'Hiragino Sans', Meiryo, sans-serif;
+}
+</style>
