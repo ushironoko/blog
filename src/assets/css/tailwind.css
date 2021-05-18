@@ -2,6 +2,7 @@
 
 body {
   @apply break-words;
+  font-family: sans-serif;
 }
 
 ul {
@@ -33,11 +34,6 @@ main {
   @apply font-normal;
 }
 
-a {
-  @apply no-underline;
-  color: inherit;
-}
-
 blockquote {
   @apply p-2;
   @apply italic;
@@ -49,6 +45,7 @@ blockquote {
 
 .nuxt-content a {
   color: #0000ee;
+  @apply underline;
 }
 
 .nuxt-content a:visited {
