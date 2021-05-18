@@ -7,12 +7,14 @@
       <a target="_blunk" rel="noopener" href="https://twitter.com/ushiro_noko"
         >Twitter</a
       >
+      <a target="_blunk" rel="noopener" href="https://ushironoko.me/feed.xml"
+        >RSS</a
+      >
       <a
-        class="mr-2"
         target="_blunk"
         rel="noopener"
-        href="https://ushironoko.me/feed.xml"
-        >RSS</a
+        href="https://github.com/ushironoko/blog"
+        >GitHub</a
       >
     </div>
   </header>
