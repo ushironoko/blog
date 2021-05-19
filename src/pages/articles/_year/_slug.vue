@@ -7,10 +7,16 @@
       <div class="flex justify-center my-12">
         <a :href="post.twitterLink" target="_blank" rel="noopener"
           ><img
+            v-if="isDark"
             width="24px"
             height="24px"
-            class="text-gray-900 dark:text-white"
-            src="/Twitter_Social_Icon_Circle_White.svg"
+            class="text-gray-900"
+            src="/Twitter_Social_Icon_Circle_Dark.svg"
+            alt="" /><img
+            width="24px"
+            height="24px"
+            class="text-gray-900"
+            src="/Twitter_Social_Icon_Circle_White.png"
             alt=""
         /></a>
       </div>
@@ -24,6 +30,8 @@ import {
   useAsync,
   useMeta,
   useContext,
+  ref,
+  onMounted,
 } from '@nuxtjs/composition-api'
 import { useArticle } from '~/composables/articles'
 
@@ -75,8 +83,17 @@ export default defineComponent({
       ],
     }))
 
+    const isDark = ref(false)
+    onMounted(
+      () =>
+        (isDark.value = window.matchMedia(
+          '(prefers-color-scheme: dark)'
+        ).matches)
+    )
+
     return {
       post,
+      isDark,
     }
   },
 })
