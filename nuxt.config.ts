@@ -132,6 +132,7 @@ const config: NuxtConfig = {
 
   tailwindcss: {
     jit: true,
+    configPath: '~~/tailwind.config.js',
   },
 
   hooks: {
