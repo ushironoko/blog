@@ -13,6 +13,7 @@
         >RSS</a
       >
       <a
+        class="mobile:hidden"
         target="_blunk"
         rel="noopener"
         href="https://github.com/ushironoko/blog"
