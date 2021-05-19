@@ -61,6 +61,25 @@ module.exports = {
 </style>
 ```
 
+- コードブロックが白基調でまぶしかったため prismjs のテーマを config で変更
+
+```js
+  content: {
+    markdown: {
+      rehypePlugins: [
+        'rehype-plugin-image-native-lazy-loading',
+        [
+          'rehype-plugin-auto-resolve-layout-shift',
+          { type: 'maxWidth', maxWidth: 640 },
+        ],
+      ],
+      prism: {
+        theme: 'prism-themes/themes/prism-material-dark.css',
+      },
+    },
+  },
+```
+
 - その他諸々のスタイル調整
   - header と description
   - twitter のシェアボタン
