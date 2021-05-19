@@ -1,7 +1,9 @@
 <template>
   <header class="flex items-center justify-between w-full my-6 font-mono">
     <a class="no-underline hover:no-underline" href="/">
-      <p class="text-2xl font-extrabold text-black">ushironoko.me</p>
+      <p class="text-2xl font-extrabold text-black dark:text-white">
+        ushironoko.me
+      </p>
     </a>
     <div>
       <a target="_blunk" rel="noopener" href="https://twitter.com/ushiro_noko"

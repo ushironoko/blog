@@ -1,6 +1,6 @@
 <template>
-  <div class="dark:bg-gray-900 dark:text-white">
-    <div class="container">
+  <div class="dark:bg-black dark:text-white">
+    <div class="max-w-screen-sm px-4 py-4 mx-auto text-base leading-loose">
       <TheHeader />
       <main>
         <Nuxt />
@@ -8,9 +8,3 @@
     </div>
   </div>
 </template>
-
-<style lang="postcss" scoped>
-.container {
-  @apply max-w-screen-sm mx-auto py-4 px-4 leading-loose text-base;
-}
-</style>

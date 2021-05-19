@@ -3,4 +3,9 @@ module.exports = {
     content: ['content/**/*.md'],
   },
   darkMode: 'media',
+  variants: {
+    extend: {
+      textColor: ['visited'],
+    },
+  },
 }

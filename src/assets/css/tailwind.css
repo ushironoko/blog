@@ -34,24 +34,6 @@ main {
   @apply font-normal;
 }
 
-blockquote {
-  @apply p-2;
-  @apply italic;
-  @apply border-l-4;
-  @apply bg-gray-100;
-  @apply text-gray-600;
-  @apply border-gray-500;
-}
-
-.nuxt-content a {
-  color: #0000ee;
-  @apply underline;
-}
-
-.nuxt-content a:visited {
-  color: #551a8b;
-}
-
 .nuxt-content {
   @apply whitespace-pre-line;
 }

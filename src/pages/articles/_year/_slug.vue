@@ -9,7 +9,7 @@
           ><img
             width="24px"
             height="24px"
-            class="text-gray-900"
+            class="text-gray-900 dark:text-white"
             src="/Twitter_Social_Icon_Circle_White.svg"
             alt=""
         /></a>
@@ -81,3 +81,20 @@ export default defineComponent({
   },
 })
 </script>
+
+<style lang="postcss" scoped>
+::v-deep blockquote {
+  @apply p-2;
+  @apply italic;
+  @apply border-l-4;
+  @apply bg-gray-100 dark:bg-gray-900;
+  @apply text-gray-600 dark:text-gray-200;
+  @apply border-gray-500 dark:border-gray-800;
+}
+
+::v-deep a {
+  @apply text-blue-400;
+  @apply visited:text-purple-400;
+  @apply underline;
+}
+</style>

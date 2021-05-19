@@ -166,6 +166,9 @@ const config: NuxtConfig = {
           { type: 'maxWidth', maxWidth: 640 },
         ],
       ],
+      prism: {
+        theme: 'prism-themes/themes/prism-material-dark.css',
+      },
     },
   },
 
