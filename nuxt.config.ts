@@ -1,5 +1,6 @@
 import { NuxtConfig } from '@nuxt/types'
 import readingTime from 'reading-time'
+import { preloadHtmlList } from './prerender'
 
 let posts: any[] = []
 
@@ -71,6 +72,7 @@ const config: NuxtConfig = {
         type: 'image/x-icon',
         href: '/articles/images/ushironoko.jpg',
       },
+      ...preloadHtmlList,
     ],
     script: [
       {
