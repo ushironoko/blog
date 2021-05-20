@@ -42,28 +42,4 @@ export const preloadHtmlList = [
     rel: `${preloadRel}`,
     href: `https://ushironoko.me/articles/2021/who-do-you-want-to-work-with`,
   },
-  {
-    rel: `${preloadRel}`,
-    href: `https://ushironoko.me/articles/2020/add-functions-and-finish-job`,
-  },
-  {
-    rel: `${preloadRel}`,
-    href: `https://ushironoko.me/articles/2020/first-post`,
-  },
-  {
-    rel: `${preloadRel}`,
-    href: `https://ushironoko.me/articles/2020/kamngaeru-vuex`,
-  },
-  {
-    rel: `${preloadRel}`,
-    href: `https://ushironoko.me/articles/2020/radio`,
-  },
-  {
-    rel: `${preloadRel}`,
-    href: `https://ushironoko.me/articles/2020/write-all-subscription`,
-  },
-  {
-    rel: `${preloadRel}`,
-    href: `https://ushironoko.me/articles/2020/yu-gi-oh-2021`,
-  },
 ]
