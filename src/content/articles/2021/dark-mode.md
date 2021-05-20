@@ -7,7 +7,6 @@ publishedAt: 2021-05-19
 ブログをダークモードに対応させた。Tailwind CSS を使っていればすぐにできるので前々からやりたいとは思っていた。tailwind.config.js の置き場所を間違えていたせいでカスタマイズが全然できていなかったのが解消されたため、これを期にと言う感じ。やったのは以下のものだけ。
 
 - tailwind.config.js に darkMode: 'media' を追加
-- ダークモード時の訪問済みリンク色が暗くて視認性が悪いためカスタムできるように variants を追加
 
 ```js
 module.exports = {
@@ -15,11 +14,6 @@ module.exports = {
     content: ['content/**/*.md'],
   },
   darkMode: 'media',
-  variants: {
-    extend: {
-      textColor: ['visited'],
-    },
-  },
 }
 ```
 
@@ -41,6 +35,7 @@ module.exports = {
 - 本文中の blockquote と a タグの色を修正
   - depp セレクタで指定しないと content 内の要素にスタイルが当たらない
   - `@apply` を使っているが DOM 構造を縛らないので許容としている（本来要素そのものにスタイルを当てるべきではない）
+  - twitter シェア用のボタンカラーを `dark:` で対応させるために currentColor を指定
 
 ```vue
 <style lang="postcss" scoped>
@@ -54,9 +49,18 @@ module.exports = {
 }
 
 ::v-deep a {
-  @apply text-blue-400;
-  @apply visited:text-purple-400;
+  @apply text-blue-800;
+  @apply dark:text-blue-400;
   @apply underline;
+}
+
+::v-deep a:visited {
+  @apply text-purple-900;
+  @apply dark:text-purple-400;
+}
+
+svg {
+  fill: currentColor;
 }
 </style>
 ```

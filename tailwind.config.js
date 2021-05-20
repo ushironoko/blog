@@ -13,9 +13,4 @@ module.exports = {
       mobile: { max: '639px' },
     },
   },
-  variants: {
-    extend: {
-      textColor: ['visited'],
-    },
-  },
 }
