@@ -86,7 +86,6 @@ svg {
 
 - その他諸々のスタイル調整
   - header と description
-  - twitter のシェアボタン
   - body に対しても効くように config で`head.bodyAttrs.class`に色指定
 
 色味は暫定なので目が痛いとかあればフィードバックください。
