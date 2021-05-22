@@ -1,17 +1,21 @@
 import fs from 'fs'
 
-const rel = 'prerender'
-const targetArticles = 'articles/2021'
-const baseURL = process.env.ORIGIN || 'http://localhost:3000'
+export const preloadHtmlList = ({
+  baseURL,
+  targetArticles,
+}: {
+  baseURL: string
+  targetArticles: string
+}) => {
+  const fileNames = fs
+    .readdirSync(`./src/content/${targetArticles}`)
+    .reduce((acc, file) => {
+      acc.push(file.replace('.md', ''))
+      return acc
+    }, [] as string[])
 
-const fileNames = fs
-  .readdirSync(`./src/content/${targetArticles}`)
-  .reduce((acc, file) => {
-    acc.push(file.replace('.md', ''))
-    return acc
-  }, [] as string[])
-
-export const preloadHtmlList = fileNames.map((fileName) => ({
-  rel,
-  href: `${baseURL}/${targetArticles}/${fileName}`,
-}))
+  return fileNames.map((fileName) => ({
+    rel: 'prerender',
+    href: `${baseURL}/${targetArticles}/${fileName}`,
+  }))
+}
