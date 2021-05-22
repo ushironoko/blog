@@ -1,6 +1,6 @@
 import { NuxtConfig } from '@nuxt/types'
 import readingTime from 'reading-time'
-import { preloadHtmlList } from './prerender'
+import { preloadHtmlList } from './functions/prerender'
 
 let posts: any[] = []
 
