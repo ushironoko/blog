@@ -112,6 +112,12 @@ assets/tailwind.css
 
 今回の敗因は上書きによってうまくいっていたと見せかけて実は脆い設計だったということで、動的クラスを生成する computed に `border-gray-300` を移動すれば順番に左右されなくなる。サボらず書きましょう。
 
+```ts
+const focusedClass = computed(() =>
+  isFocus.value ? 'border-blue-700 ring-4 ring-blue-100 transition duration-100' : 'border-gray-300'
+);
+```
+
 ## まとめ
 
 - jit モードでも SFC 内で動的に記述したユーティリティクラスを生成できる
