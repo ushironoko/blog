@@ -82,7 +82,7 @@ export default defineComponent({
         },
         {
           property: 'og:image',
-          content: `${process.env.OGP_IMAGE_ORIGIN}/${
+          content: `${process.env.OGP_IMAGE_ORIGIN}${
             post?.value?.title || 'ushironoko.me.'
           }?theme=light&md=1&fontSize=95px`,
         },
