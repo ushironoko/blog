@@ -55,7 +55,7 @@ export default defineComponent({
       return await fetchArticle()
     }, route.value.fullPath)
 
-    const ogTitle = post?.value?.title ?? 'ushironoko.me'
+    const ogTitle = post?.value?.title ?? 'ushironoko.me.'
     useMeta(() => ({
       title: `${post?.value?.title || 'ブログ'} - ushironoko.me`,
       meta: [
