@@ -55,7 +55,6 @@ export default defineComponent({
       return await fetchArticle()
     }, route.value.fullPath)
 
-    const ogTitle = post?.value?.title ?? 'ushironoko.me.'
     useMeta(() => ({
       title: `${post?.value?.title || 'ブログ'} - ushironoko.me`,
       meta: [
@@ -83,7 +82,9 @@ export default defineComponent({
         },
         {
           property: 'og:image',
-          content: `https://og-image-one-pearl.vercel.app/${ogTitle}?theme=light&md=1&fontSize=95px`,
+          content: `https://og-image-one-pearl.vercel.app/${
+            post?.value?.title || 'ushironoko.me.'
+          }?theme=light&md=1&fontSize=95px`,
         },
       ],
     }))
