@@ -64,7 +64,7 @@ export default defineComponent({
         },
         {
           property: 'og:image',
-          content: `https://og-image-one-pearl.vercel.app/ushironoko.me?theme=light&md=1&fontSize=95px`,
+          content: `https://og-image-one-pearl.vercel.app/ushironoko.me.?theme=light&md=1&fontSize=95px`,
         },
       ],
     }))
