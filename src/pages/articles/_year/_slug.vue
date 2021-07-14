@@ -1,7 +1,7 @@
 <template>
-  <article>
-    <template v-if="post">
-      <h1 class="mb-2">{{ post.title }}</h1>
+  <main v-if="post">
+    <h1 class="mb-2">{{ post.title }}</h1>
+    <article>
       <TheDescriptions :post="post" :is-show-description="false" />
       <NuxtContent :document="post" />
       <div class="flex justify-center my-12">
@@ -16,6 +16,7 @@
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 400 400"
           >
+            <title>Twitter Share Button</title>
             <path
               d="M400,200c0,110.5-89.5,200-200,200S0,310.5,0,200S89.5,0,200,0S400,89.5,400,200z M163.4,305.5
 	c88.7,0,137.2-73.5,137.2-137.2c0-2.1,0-4.2-0.1-6.2c9.4-6.8,17.6-15.3,24.1-25c-8.6,3.8-17.9,6.4-27.7,7.6
@@ -26,8 +27,8 @@
             /></svg
         ></a>
       </div>
-    </template>
-  </article>
+    </article>
+  </main>
 </template>
 
 <script lang="ts">
