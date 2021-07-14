@@ -5,7 +5,7 @@
     <article>
       <NuxtContent :document="post" />
     </article>
-    <div class="flex justify-center my-12">
+    <footer class="flex justify-center my-12">
       <a class="w-6 h-6" :href="post.twitterLink" target="_blank" rel="noopener"
         ><svg
           class="text-black dark:text-white"
@@ -23,7 +23,7 @@
 	c-16.5,12.9-37.3,20.6-59.9,20.6c-3.9,0-7.7-0.2-11.5-0.7C110.8,297.5,136.2,305.5,163.4,305.5"
           /></svg
       ></a>
-    </div>
+    </footer>
   </div>
 </template>
 
