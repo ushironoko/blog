@@ -70,7 +70,7 @@ const color = 'text-green-500'
 
 ```
 
-![](https://i.gyazo.com/f176906777f304f2ce251f7bf939beed.png)
+![パージされずにクラスが生成されていることがわかる写真](https://i.gyazo.com/f176906777f304f2ce251f7bf939beed.png)
 
 また動的に文字列を組み立てた場合は検知できずパージされてしまっていた（開発モード）。
 
@@ -99,7 +99,7 @@ const colorNumber = '500'
 
 ```
 
-![](https://i.gyazo.com/6a4d09bb197cf3b00b8dde674d335ea1.png)
+![tailwindそのままとwindicssの場合の結果を比較した写真](https://i.gyazo.com/6a4d09bb197cf3b00b8dde674d335ea1.png)
 
 tailwindをそのまま使った方も、プロダクションビルド時にはパージされる。パージされるのが早いか遅いかくらいの違いしかなかった。windicssのパージ処理を深く追っていないので詳細は分からないが、vue-loader上でSFCファイル内を正規表現にかけるみたいなことをやっているだけかもしれない。
 

@@ -71,17 +71,17 @@ export default defineComponent({
 
 jit 未指定時
 
-![](https://i.gyazo.com/f058df9498a799101f419c03dceb5570.gif)
+![inputのフォーカスリングが表示されているgif](https://i.gyazo.com/f058df9498a799101f419c03dceb5570.gif)
 
 mode: 'jit' 時
 
-![](https://i.gyazo.com/748f271139f6c8de53a4f498afde8e7b.gif)
+![inputのフォーカスリングが消えているgif](https://i.gyazo.com/748f271139f6c8de53a4f498afde8e7b.gif)
 
 この現象に似たものとして Windi CSS を使った時を思い出した。Windi CSS は動的な CSS に対応していないため上記のように書くと未使用扱いになりパージされてしまう。Windi CSS はデフォルトで jit モードと同じくオンデマンドにユーティリティクラスを生成していて、jit モードでも同様に動的クラスを見てくれないのかもしれないとこの時は思っていた。
 
 とりあえずプロダクションビルドではどうなるんだろうかとビルド結果を見てみると、しっかり `border-blue-700` が出力されていた。jit モードは本番と開発で同様の出力結果になるらしく環境の違いではなさそう。
 
-![](https://i.gyazo.com/762247745feefc0880e8fdab6a055b11.png)
+![バンドルにblueが含まれていることがわかる写真](https://i.gyazo.com/762247745feefc0880e8fdab6a055b11.png)
 
 https://tailwindcss.com/docs/just-in-time-mode#enabling-jit-mode
 
@@ -89,7 +89,7 @@ https://tailwindcss.com/docs/just-in-time-mode#enabling-jit-mode
 
 直接見た方が早そうなので html に埋め込まれているユーティリティクラスを見たら、ちゃんと出力されていた。ちなみに tailwind.css 内で Preflight を読み込んでいる場合 base → utilityの順だと長すぎてユーティリティクラスが省略されてしまうので utility → base の順に読み込ませておくと良い。
 
-![](https://i.gyazo.com/5be38c1f01854c75137fd4129c064da7.png)
+![ちゃんとblueが生成されていることがわかる写真](https://i.gyazo.com/5be38c1f01854c75137fd4129c064da7.png)
 
 assets/tailwind.css
 
@@ -100,11 +100,11 @@ assets/tailwind.css
 
 よくみると `border-blue-700` が存在するのに無効になっていた。`border-gray-300` に上書きされてるっぽい。つまりこれは双方のユーティリティクラスの定義順によって後から動的に当てた同じデータ型のスタイルを上書きしてしまうという現象だった。
 
-![](https://i.gyazo.com/d958a7d1d5e33ccf7ace593622cd671a.png)
+![blueがgrayに上書きされている写真](https://i.gyazo.com/d958a7d1d5e33ccf7ace593622cd671a.png)
 
 実際に jit モード時と通常時で出力されるユーティリティクラスを比較すると、通常時では `border-blue-700` が `border-gray-300` より後になっているが jit では順序が変わっている事が分かった。
 
-![](https://i.gyazo.com/8bac8b6796a9cc6cb7ac268e386a5490.png)
+![jitモードとそうでないときの生成されたコードのdiff写真](https://i.gyazo.com/8bac8b6796a9cc6cb7ac268e386a5490.png)
 
 通常のパージ処理は全てが定義された状態から不要なものを落としていくため `border-blue-xxx` というクラスでまとまって定義されるが、jit モードではビルド時の出現順に生成していくっぽく並び順が（生成されるファイルを見ない限り）予測不能な状態になっていた。これにより元々 gray が先に定義されていて運良く動いていたものがスタイルの上書きによって動かなくなったというのが真相。
 

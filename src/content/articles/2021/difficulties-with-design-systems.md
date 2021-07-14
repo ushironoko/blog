@@ -20,7 +20,7 @@ publishedAt: 2021-05-14
 
 これらはデザインシステムを運用する上での how になりますが、実際にはじめてみると「何がデザインシステムなのか」という悩みに直面します。例えば以下のような Card コンポーネントのデザインシステムの master があるとします。
 
-[![Image from Gyazo](https://i.gyazo.com/dbd7df8ea6d5481bde999ee522261e04.png)](https://gyazo.com/dbd7df8ea6d5481bde999ee522261e04)
+[![含まれるコンテンツの種類によってスペーシングが変わるコンポーネントの図](https://i.gyazo.com/dbd7df8ea6d5481bde999ee522261e04.png)](https://gyazo.com/dbd7df8ea6d5481bde999ee522261e04)
 
 適当にそれっぽいのを figma で作ってみました。Card コンポーネントの中に入るコンテンツパターンと、そのコンテンツが持つ spacing を設定しています。この spacing はデザイントークンとして定義してありデザイナーが参照します。さらに実装では Tailwind CSS などの仕組みで担保されるためエンジニアも px 数を間違うことはありません。
 

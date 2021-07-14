@@ -4,6 +4,8 @@ description: 生成しないとは言ってない
 publishedAt: 2021-04-27
 ---
 
+※Nuxtに標準で含まれる機能を用いてランタイムを抜くことができたため、本文の最後に追記しています。
+
 前に STUDIO の miyaoka さんがブログでこういうことをやっていた。
 
 > しかしこのブログはドキュメントでありアプリケーションではないので、ほぼ JS を動かす必要はない。state は不要だし、client-side routing も要らない（先読みに必要かもだが）。なのでピュアに HTML として書き出したい。
@@ -87,7 +89,7 @@ hooks: {
 </html>
 ```
 
-![](https://i.gyazo.com/8e9beb831c96037a5c3924e9308951ab.png)
+![devtoolのネットワークタブでjsが読み込まれていないことを確認している写真](https://i.gyazo.com/8e9beb831c96037a5c3924e9308951ab.png)
 
 実際にはビルド時に js は生成されているため Next みたくランタイムを出力結果から消すわけではないが、html が読み込まないのでセーフ。実は `nuxt/content` で composition api を使った時に全てのページで `db.json` という検索クエリ発行時に参照するためのデータを読んでしまっており、json には全ページ分のデータが入っていて記事が増えるたびに重くなるという悩みがあった（本来 asyncData と fetch の外でクエリが呼ばれた時にしか参照しない）。今回の改善でついでに解消されてかなり早くなった。
 
@@ -105,7 +107,7 @@ https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-render/#injects
 
 とするだけでjsを読み込まないプレーンなHTMLを生成してくれる。ただし、自前で消していた時と同じようにランタイム自体は生成されるっぽい。
 
-![](https://i.gyazo.com/08851ad1147edda4727e05ef9f1e09cb.png)
+![distの中身のスクリーンショット](https://i.gyazo.com/08851ad1147edda4727e05ef9f1e09cb.png)
 
 injectScriptsがfalseの場合、preload用のlinkタグとランタイム読み込み用のscriptタグの差し込みをスキップするようになってるっぽい。
 
