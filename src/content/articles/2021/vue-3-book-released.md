@@ -1,6 +1,6 @@
 ---
 title: Vue 3に関する商業誌を書きました
-description: 
+description: 完走しました
 publishedAt: 2021-07-20
 ---
 
