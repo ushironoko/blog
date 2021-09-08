@@ -6,7 +6,6 @@ publishedAt: 2021-09-08
 
 Nuxt の `useAsync` の調査ログ。そもそも `asyncData` がなぜレンダリングを待つことができるのかも気になったので調べてみた。
 
-
 ## Nuxt 本体 の asyncData
 
 ポイントは client.js の `render` と `mountApp`
