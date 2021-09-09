@@ -78,7 +78,7 @@ https://github.com/nuxt-community/composition-api/blob/4c8d8c54984e2f6cf44ce459f
 
 `onServerPrefetch` は内部で `vue-server-renderer` を使っていて、Promise の解決までレンダリングを止めることができる。
 
-https://github.com/vuejs/composition-api/pull/198/files#diff-f6a49ae9babff5bdd577b4838e8c7ecf3c5ad76984a82e38c02cbb40a054b6f4R37-R59
+https://github.com/vuejs/composition-api/blob/main/test/ssr/serverPrefetch.spec.js#L20-L41
 
 CSR ではこれが使われていないため、`setup` の実行がそのまま終了して return、マウント後に `useAsync` が解決して値が入るという流れになっている（と思う）。`setup` の実行タイミング次第で待つことができるようになるかもしれないが、Vue2 系では無理だったという issue もあるため詳細は分からない。
 
