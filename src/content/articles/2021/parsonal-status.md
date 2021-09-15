@@ -1,5 +1,5 @@
 ---
-title: 身体
+title: 身体（随時更新）
 description: メモ
 publishedAt: 2021-09-15
 ---
@@ -22,4 +22,4 @@ publishedAt: 2021-09-15
 1日の平均摂取カロリー: 1,330kal
 
 目標消費カロリー: 335kcal
-目標PFCバランス:P 166g, F 58g, C 296g
+目標PFCバランス: P 166g, F 58g, C 296g
