@@ -10,6 +10,10 @@ ul {
   @apply list-inside;
 }
 
+ul > li {
+  margin-left: 18px;
+}
+
 h1,
 h2 {
   @apply font-bold;
