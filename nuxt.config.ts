@@ -72,7 +72,11 @@ const config: NuxtConfig = {
         type: 'image/x-icon',
         href: '/articles/images/ushironoko.jpg',
       },
-      ...preloadHtmlList({ baseURL, targetArticles: 'articles/2021' }),
+      ...preloadHtmlList({
+        baseURL,
+        targetArticles: 'articles/2021',
+        maxLength: 5,
+      }),
     ],
     script: [
       {
