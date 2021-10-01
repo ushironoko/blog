@@ -74,6 +74,7 @@ export default defineComponent({
         {
           property: 'og:description',
           content:
+            post?.value?.firstParagraph ||
             post?.value?.description ||
             'ushironokoのブログです。日常から技術の話までなんでも書きます。',
         },

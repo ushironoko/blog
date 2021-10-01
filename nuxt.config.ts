@@ -158,6 +158,9 @@ const config: NuxtConfig = {
           },
         })
         document.reading_time = text
+
+        const firstParagraph = document.text.match(/^[^。]*/)[0]
+        document.firstParagraph = firstParagraph
       }
     },
   },
