@@ -10,7 +10,7 @@ ul {
   @apply list-inside;
 }
 
-ul > li {
+li > ul > li {
   @apply ml-8;
 }
 
