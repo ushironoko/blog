@@ -4,7 +4,7 @@ description: 日報
 publishedAt: 2021-10-02
 ---
 
-2021-10-02 日報
+2021-10-02 日報。
 
 - ブログのdescriptionを記事の最初の句点までをとるようにした
   - miyaoka.dev のやりかたをパクった
