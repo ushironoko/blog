@@ -2,7 +2,7 @@
   <div class="mb-8 text-sm text-gray-500 dark:text-gray-400">
     <p>{{ dateFormat(post.publishedAt) }} ⏳ {{ post.reading_time }}</p>
     <p v-if="isShowDescription">
-      {{ post.description }}
+      {{ post.firstParagraph || post.description }}
     </p>
   </div>
 </template>
