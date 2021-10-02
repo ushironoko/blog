@@ -1,10 +1,10 @@
 ---
-title: 日報
+title: description改善とロストジャッジメント
 description: 日報
 publishedAt: 2021-10-02
 ---
 
-2021-10-02 ブログのdescriptionをちょっと改善した。
+2021-10-02 日報
 
 - ブログのdescriptionを記事の最初の句点までをとるようにした
   - miyaoka.dev のやりかたをパクった
