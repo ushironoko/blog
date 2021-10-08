@@ -1,7 +1,7 @@
 ---
 title: いいよ
 description: いいよ
-published: 2021-01-12
+published: 2021-10-08
 ---
 
 いいよ。
