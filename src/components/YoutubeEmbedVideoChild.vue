@@ -1,5 +1,10 @@
 <template>
-  <iframe class="w-full h-full" frameborder="0" allowfullscreen></iframe>
+  <iframe
+    name="youtube"
+    class="w-full h-full"
+    frameborder="0"
+    allowfullscreen
+  ></iframe>
 </template>
 
 <style lang="postcss" scoped>
