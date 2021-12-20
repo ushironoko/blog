@@ -1,7 +1,7 @@
 ---
 title: サブスクぜんぶ書く
 description: 支出整理もかねて書きました
-publishedAt: 2020-12-27
+publishedAt: 2021-12-20
 ---
 
 今年もぜんぶ書いて精算していきます。去年のはこちら → https://ushironoko.me/articles/2020/write-all-subscription
