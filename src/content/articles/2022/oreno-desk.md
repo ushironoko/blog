@@ -111,6 +111,10 @@ RAM はノート PC 向けの SO-DIMM となる。グラボは 35cm までの大
 
 https://www.amazon.co.jp/HHKB-Professional-HYBRID-%E6%97%A5%E6%9C%AC%E8%AA%9E%E9%85%8D%E5%88%97%EF%BC%8F%E5%A2%A8-PD-KB820BS/dp/B082TSZ27D/
 
+パームレストは FILCO の漆塗りリストレスト　摺漆塗りS。初期傷があって悲しい。
+
+https://www.diatec.co.jp/shop/det.php?prod_c=3652
+
 トラックパッドは純正の Magic Trackpad 2。Bluetooth でも繋げるが、私用/仕事の mac 間を切り替えるのにどのみち有線接続が必要で、一々つけるのも面倒ということで繋ぎっぱなしにしている。
 
 https://www.amazon.co.jp/Apple-Magic-Trackpad-2-MJ2R2J/dp/B016ZE7K8
