@@ -11,7 +11,7 @@ publishedAt: 2022-04-27
 
 まず自分のデバイス周りを図解する。各種デバイスの紹介は後ほど。
 
-[![Image from Gyazo](https://i.gyazo.com/09c445f4a921a7b1cb552a484dfa6ef8.png)](https://gyazo.com/09c445f4a921a7b1cb552a484dfa6ef8)
+[![Image from Gyazo](https://i.gyazo.com/09c445f4a921a7b1cb552a484dfa6ef8.png)](https://i.gyazo.com/09c445f4a921a7b1cb552a484dfa6ef8.png)
 
 コンセプトは Thunderbolt で完結する環境で、ほとんどのデバイスはドックに集約されている。
 
@@ -33,7 +33,7 @@ publishedAt: 2022-04-27
 
 など。メインモニタのみスイッチャーを経由するためにそれぞれのデバイスから HDMI で接続している（サブは全てドック出力）。スイッチャーは基本自動切り替えだが、机の裏に固定しているので手動でボタンを押して切り替えることもできる。
 
-[![Image from Gyazo](https://i.gyazo.com/a239f051de0ceb114cdd0b6645886f29.jpg)](https://gyazo.com/a239f051de0ceb114cdd0b6645886f29)
+[![Image from Gyazo](https://i.gyazo.com/a239f051de0ceb114cdd0b6645886f29.jpg)](https://i.gyazo.com/a239f051de0ceb114cdd0b6645886f29.jpg)
 
 また一緒に机の裏にキャプチャボードを固定しており、Switch はキャプボを経由してメインモニタに繋がっている。キャプボはドックに挿しっぱなしで、常に PC 側でキャプチャできる。のちに紹介するが Stream Deck でゲーム画面の録画やスクショを撮ることも可能。
 
@@ -43,11 +43,11 @@ publishedAt: 2022-04-27
 
 Before
 
-[![Image from Gyazo](https://i.gyazo.com/315997b6a389ecf4617741d54e42218d.jpg)](https://gyazo.com/315997b6a389ecf4617741d54e42218d)
+[![Image from Gyazo](https://i.gyazo.com/315997b6a389ecf4617741d54e42218d.jpg)](https://i.gyazo.com/315997b6a389ecf4617741d54e42218d.jpg)
 
 After
 
-[![Image from Gyazo](https://i.gyazo.com/b742177a9a445b9fc25dd403b40a236d.jpg)](https://gyazo.com/b742177a9a445b9fc25dd403b40a236d)
+[![Image from Gyazo](https://i.gyazo.com/b742177a9a445b9fc25dd403b40a236d.jpg)](https://i.gyazo.com/b742177a9a445b9fc25dd403b40a236d.jpg)
 
 そのうちまた見直すと思う。
 
@@ -55,7 +55,7 @@ After
 
 机上はこんな感じ。
 
-[![Image from Gyazo](https://i.gyazo.com/9675312e301cdfb707303c740cf1d335.jpg)](https://gyazo.com/9675312e301cdfb707303c740cf1d335)
+[![Image from Gyazo](https://i.gyazo.com/9675312e301cdfb707303c740cf1d335.jpg)](https://i.gyazo.com/9675312e301cdfb707303c740cf1d335.jpg)
 
 写っているものに関してそれぞれ詳細を書いていく。
 
@@ -83,13 +83,13 @@ https://www.amazon.co.jp/gp/product/B07WSV5G2M/
 
 仕事用のは M1MAX 14インチ、私用のは 2019年モデルの MBP 13インチ。スタンドで立てておいて、常にクラムシェル運用している。充電が切れないように、使っていない方の mac には純正の充電アダプターを挿している。
 
-[![Image from Gyazo](https://i.gyazo.com/d69337f26511ce9e794c4952a6bdb139.jpg)](https://gyazo.com/d69337f26511ce9e794c4952a6bdb139)
+[![Image from Gyazo](https://i.gyazo.com/d69337f26511ce9e794c4952a6bdb139.jpg)](https://i.gyazo.com/d69337f26511ce9e794c4952a6bdb139.jpg)
 
 左の黒い箱が intel NUC 12 Extream Kit。
 
 https://www.intel.co.jp/content/www/jp/ja/products/sku/216963/intel-nuc-12-extreme-kit-nuc12dcmi9/specifications.html
 
-[![Image from Gyazo](https://i.gyazo.com/bacfeeb0a08c95c4f8709c51eabd94a5.jpg)](https://gyazo.com/bacfeeb0a08c95c4f8709c51eabd94a5)
+[![Image from Gyazo](https://i.gyazo.com/bacfeeb0a08c95c4f8709c51eabd94a5.jpg)](https://i.gyazo.com/bacfeeb0a08c95c4f8709c51eabd94a5.jpg)
 
 最近発売されたもので、Thunderbolt 対応のゲーミング PC をどうしようか考えていたところ知人に紹介されてこれでいいじゃんとなり購入。ベアボーンなのでメモリ、SSD、グラボ、OS あたりは別途購入が必要。
 
@@ -105,7 +105,7 @@ RAM はノート PC 向けの SO-DIMM となる。グラボは 35cm までの大
 
 ### キーボード&マウス周辺
 
-[![Image from Gyazo](https://i.gyazo.com/433a02360cedca5c4c97425746766a16.jpg)](https://gyazo.com/433a02360cedca5c4c97425746766a16)
+[![Image from Gyazo](https://i.gyazo.com/433a02360cedca5c4c97425746766a16.jpg)](https://i.gyazo.com/433a02360cedca5c4c97425746766a16.jpg)
 
 キーボードは HHKB Professional HYBRID Type-S の日本語配列有刻印を使っている。Bluetooth で4台まで接続切り替えができる。またドック前面の type-c ポートでどの PC にも有線で繋げられる。
 
@@ -129,7 +129,7 @@ https://www.amazon.co.jp/Ultimate-Guard-UGD010193-%E3%83%97%E3%83%AC%E3%82%A4%E3
 
 机上台にはドックと（図で書き忘れた）Bluetooth スピーカーを置いている。机上台の前にあるのが Stream Deck MK.2。メインモニタを持ち上げるとこんな感じ。
 
-[![Image from Gyazo](https://i.gyazo.com/8b4fc2908a688481ac9debc5e2b0fa20.jpg)](https://gyazo.com/8b4fc2908a688481ac9debc5e2b0fa20)
+[![Image from Gyazo](https://i.gyazo.com/8b4fc2908a688481ac9debc5e2b0fa20.jpg)](https://i.gyazo.com/8b4fc2908a688481ac9debc5e2b0fa20.jpg)
 
 ドックは Belkin CONNECT Pro 12-in-1 Thunderbolt 4 Dock。値は張るが動作が安定しており穴も多い。何よりコンセプトである Thunderbolt で完結する環境には必須のアイテムだった（これをおすすめされた時にコンセプトを決めた）。
 
@@ -162,7 +162,7 @@ https://www.amazon.co.jp/gp/product/B08PK6DNTZ/
 
 TP Link の Deco X60 でメッシュ Wi-Fi を導入した。各デバイスへは同じく TP Link の5ポートスイッチングハブ経由で有線で繋いでいる。置き場所に困ったが、カゴに入れてもう使っていないゲーミングPCの上に置いている。調子が良いときは上り下り共に500Mbps程度出る（回線は So-net の v6プラス）。専用のアプリもそこそこ使いやすい。
 
-[![Image from Gyazo](https://i.gyazo.com/a8ab5aca29d3c1afa0e94487a24fed53.jpg)](https://gyazo.com/a8ab5aca29d3c1afa0e94487a24fed53)
+[![Image from Gyazo](https://i.gyazo.com/a8ab5aca29d3c1afa0e94487a24fed53.jpg)](https://i.gyazo.com/a8ab5aca29d3c1afa0e94487a24fed53.jpg)
 
 https://www.amazon.co.jp/gp/product/B0873GL9F6/
 https://www.amazon.co.jp/%E3%80%90Amazon-co-jp%E9%99%90%E5%AE%9A%E3%80%91TP-Link-%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%83%B3%E3%82%B0%E3%83%8F%E3%83%96-1000Mbps-%E3%83%A9%E3%82%A4%E3%83%95%E3%82%BF%E3%82%A4%E3%83%A0%E4%BF%9D%E8%A8%BC-TL-SG105V4-0/dp/B00A128S24/
@@ -173,7 +173,7 @@ https://www.amazon.co.jp/%E3%80%90Amazon-co-jp%E9%99%90%E5%AE%9A%E3%80%91TP-Link
 
 環境といっても1つだが、Anker 533 Wireless Charger (3-in-1 Stand)を使っている。最近発売されたやつで、Apple Watchや AirPods も充電できてとても便利。スマホの充電スタンドは使い出すとやめられなくなる。
 
-[![Image from Gyazo](https://i.gyazo.com/73862fab20d1531dd40af71bcf7f6cde.jpg)](https://gyazo.com/73862fab20d1531dd40af71bcf7f6cde)
+[![Image from Gyazo](https://i.gyazo.com/73862fab20d1531dd40af71bcf7f6cde.jpg)](https://i.gyazo.com/73862fab20d1531dd40af71bcf7f6cde.jpg)
 
 https://www.amazon.co.jp/gp/product/B09LCMZ39T/
 
@@ -185,7 +185,7 @@ https://www.amazon.co.jp/gp/product/B07WGPPZQK/
 
 ### ゲーム関連
 
-[![Image from Gyazo](https://i.gyazo.com/6e87c15bc359d2af550fc46914f29adf.jpg)](https://gyazo.com/6e87c15bc359d2af550fc46914f29adf)
+[![Image from Gyazo](https://i.gyazo.com/6e87c15bc359d2af550fc46914f29adf.jpg)](https://i.gyazo.com/6e87c15bc359d2af550fc46914f29adf.jpg)
 
 Switch は有機ELモデルで友人から定価で買い取った。先ほども書いたがキャプチャボードを経由して HDMI スイッチャーに繋がっている。電源をつけるとメインモニタがゲーム画面に切り替わって便利。
 
@@ -218,7 +218,7 @@ https://www.amazon.co.jp/gp/product/B0822NRR6W/
 
 机の角にヘッドホンを釣っている。ヘッドホンは DROP + Sennheiser PC38Xで、まれに使うがすぐ頭が痛くなるので値段ほどの活躍はさせられてない（のもあってスピーカーを買った）。
 
-[![Image from Gyazo](https://i.gyazo.com/f3feff7c2fbd6ea87a268377383b9337.jpg)](https://gyazo.com/f3feff7c2fbd6ea87a268377383b9337)
+[![Image from Gyazo](https://i.gyazo.com/f3feff7c2fbd6ea87a268377383b9337.jpg)](https://i.gyazo.com/f3feff7c2fbd6ea87a268377383b9337.jpg)
 
 https://www.amazon.co.jp/Drop-Sennheiser-PC38X-%E3%82%B2%E3%83%BC%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%98%E3%83%83%E3%83%89%E3%82%BB%E3%83%83%E3%83%88-%E3%82%AA%E3%83%BC%E3%83%90%E3%83%BC%E3%82%A4%E3%83%A4%E3%83%BC%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%83%90%E3%83%83%E3%82%AF%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3/dp/B08TX6GQTB
 
@@ -230,7 +230,7 @@ https://www.amazon.co.jp/gp/product/B07RHJ1QCK/
 
 かなでもののパインにX字の脚を合わせたもの。足にはマグネットのケーブルクリップでまとめた type-c ケーブルやまれに使う骨伝導イヤホンなどをくっつけている。
 
-[![Image from Gyazo](https://i.gyazo.com/40033b6fcf3851ea08be16b1e49f7ef8.jpg)](https://gyazo.com/40033b6fcf3851ea08be16b1e49f7ef8)
+[![Image from Gyazo](https://i.gyazo.com/40033b6fcf3851ea08be16b1e49f7ef8.jpg)](https://i.gyazo.com/40033b6fcf3851ea08be16b1e49f7ef8.jpg)
 
 https://kanademono.design/products/tt-k04
 https://kanademono.design/collections/table-legs/products/x-k11
