@@ -105,6 +105,8 @@ RAM はノート PC 向けの SO-DIMM となる。グラボは 35cm までの大
 
 ### キーボード&マウス周辺
 
+[![Image from Gyazo](https://i.gyazo.com/433a02360cedca5c4c97425746766a16.jpg)](https://gyazo.com/433a02360cedca5c4c97425746766a16)
+
 キーボードは HHKB Professional HYBRID Type-S の日本語配列有刻印を使っている。Bluetooth で4台まで接続切り替えができる。またドック前面の type-c ポートでどの PC にも有線で繋げられる。
 
 https://www.amazon.co.jp/HHKB-Professional-HYBRID-%E6%97%A5%E6%9C%AC%E8%AA%9E%E9%85%8D%E5%88%97%EF%BC%8F%E5%A2%A8-PD-KB820BS/dp/B082TSZ27D/
@@ -183,6 +185,8 @@ https://www.amazon.co.jp/gp/product/B07WGPPZQK/
 
 ### ゲーム関連
 
+[![Image from Gyazo](https://i.gyazo.com/6e87c15bc359d2af550fc46914f29adf.jpg)](https://gyazo.com/6e87c15bc359d2af550fc46914f29adf)
+
 Switch は有機ELモデルで友人から定価で買い取った。先ほども書いたがキャプチャボードを経由して HDMI スイッチャーに繋がっている。電源をつけるとメインモニタがゲーム画面に切り替わって便利。
 
 https://www.amazon.co.jp/gp/product/B08T1YXDDJ/
@@ -194,8 +198,6 @@ https://www.amazon.co.jp/Elgato-%E3%82%B2%E3%83%BC%E3%83%A0%E3%82%AD%E3%83%A3%E3
 PS5 はリビングにあるのでデカい画面でやりたいモチベーションのないゲームは Switch かゲーミング PC でやるようにしている。
 
 そのほかの小物もここに置いてある。白黒のだるまは会社の忘年会ビンゴで当たった。
-
-[![Image from Gyazo](https://i.gyazo.com/6e87c15bc359d2af550fc46914f29adf.jpg)](https://gyazo.com/6e87c15bc359d2af550fc46914f29adf)
 
 L字の台はニトリで買ったウォールシェルフの45cm。壁には穴が目立たないタイプの小さいピンで固定できる。
 
