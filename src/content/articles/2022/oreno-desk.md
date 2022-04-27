@@ -61,23 +61,13 @@ After
 
 ### モニタ周り
 
-メインモニタは BENQ の ZOWIE XL2411、サブは Acer KG251。5,6年前に買ったやつをずっと使っている。ゲームでも使うので色が綺麗に出るやつとかが使えない問題がある（ゲームで使うと酔う）。
+メインモニタは [BENQ ZOWIE XL2411](https://www.amazon.co.jp/%E3%82%B2%E3%83%BC%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%A2%E3%83%8B%E3%82%BF%E3%83%BC-%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4-ZOWIE-XL2411-24%E3%82%A4%E3%83%B3%E3%83%81/dp/B01LZUO3MV)、サブは [Acer KG251](https://www.amazon.co.jp/gp/product/B0756CV1CG/)。5,6年前に買ったやつをずっと使っている。ゲームでも使うので色が綺麗に出るやつとかが使えない問題がある（ゲームで使うと酔う）。
 
-https://www.amazon.co.jp/%E3%82%B2%E3%83%BC%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%A2%E3%83%8B%E3%82%BF%E3%83%BC-%E3%83%87%E3%82%A3%E3%82%B9%E3%83%97%E3%83%AC%E3%82%A4-ZOWIE-XL2411-24%E3%82%A4%E3%83%B3%E3%83%81/dp/B01LZUO3MV
+2枚ともモニターアームで釣っている。[エルゴトロン LX デスクマウントアーム](https://www.amazon.co.jp/%E3%82%A8%E3%83%AB%E3%82%B4%E3%83%88%E3%83%AD%E3%83%B3-%E3%83%87%E3%82%B9%E3%82%AF%E3%83%9E%E3%82%A6%E3%83%B3%E3%83%88-%E3%83%A2%E3%83%8B%E3%82%BF%E3%83%BC%E3%82%A2%E3%83%BC%E3%83%A0-%E3%83%9E%E3%83%83%E3%83%88%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF-45-241-224/dp/B07Q8TJ2KL/) を2つ使っている。
 
-https://www.amazon.co.jp/gp/product/B0756CV1CG/
+メインモニタに乗っているカメラは [ロジクール C980GR]([](https://www.amazon.co.jp/%E3%83%AD%E3%82%B8%E3%82%AF%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AB%E3%82%B9-StreamCam-C980OW-2%E5%B9%B4%E9%96%93%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E4%BF%9D%E8%A8%BC/dp/B086R71LGW/)) という Web カメラ。リモート主体になってきてクラムシェル運用を始めたあたりに買った。使うときはドック前面の type-c ポートに挿して使う。
 
-2枚ともモニターアームで釣っている。エルゴトロン LX デスクマウントアームを2つ使っている。
-
-https://www.amazon.co.jp/%E3%82%A8%E3%83%AB%E3%82%B4%E3%83%88%E3%83%AD%E3%83%B3-%E3%83%87%E3%82%B9%E3%82%AF%E3%83%9E%E3%82%A6%E3%83%B3%E3%83%88-%E3%83%A2%E3%83%8B%E3%82%BF%E3%83%BC%E3%82%A2%E3%83%BC%E3%83%A0-%E3%83%9E%E3%83%83%E3%83%88%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF-45-241-224/dp/B07Q8TJ2KL/
-
-メインモニタに乗っているカメラは ロジクール C980GR という Web カメラ。リモート主体になってきてクラムシェル運用を始めたあたりに買った。使うときはドック前面の type-c ポートに挿して使う。
-
-https://www.amazon.co.jp/%E3%83%AD%E3%82%B8%E3%82%AF%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AB%E3%82%B9-StreamCam-C980OW-2%E5%B9%B4%E9%96%93%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E4%BF%9D%E8%A8%BC/dp/B086R71LGW/
-
-サブモニタにはモニタの上に物が置けるようになる台をつけている（ディスプレイボードというらしい）。
-
-https://www.amazon.co.jp/gp/product/B07WSV5G2M/
+サブモニタにはモニタの上に物が置けるようになる [ロボロビン ディスプレイボード](https://www.amazon.co.jp/gp/product/B07WSV5G2M/) をつけている。
 
 ### PC
 
@@ -85,9 +75,7 @@ https://www.amazon.co.jp/gp/product/B07WSV5G2M/
 
 [![Image from Gyazo](https://i.gyazo.com/d69337f26511ce9e794c4952a6bdb139.jpg)](https://i.gyazo.com/d69337f26511ce9e794c4952a6bdb139.jpg)
 
-左の黒い箱が intel NUC 12 Extream Kit。
-
-https://www.intel.co.jp/content/www/jp/ja/products/sku/216963/intel-nuc-12-extreme-kit-nuc12dcmi9/specifications.html
+左の黒い箱が [intel NUC 12 Extream Kit](https://www.intel.co.jp/content/www/jp/ja/products/sku/216963/intel-nuc-12-extreme-kit-nuc12dcmi9/specifications.html)。
 
 [![Image from Gyazo](https://i.gyazo.com/bacfeeb0a08c95c4f8709c51eabd94a5.jpg)](https://i.gyazo.com/bacfeeb0a08c95c4f8709c51eabd94a5.jpg)
 
@@ -107,25 +95,15 @@ RAM はノート PC 向けの SO-DIMM となる。グラボは 35cm までの大
 
 [![Image from Gyazo](https://i.gyazo.com/433a02360cedca5c4c97425746766a16.jpg)](https://i.gyazo.com/433a02360cedca5c4c97425746766a16.jpg)
 
-キーボードは HHKB Professional HYBRID Type-S の日本語配列有刻印を使っている。Bluetooth で4台まで接続切り替えができる。またドック前面の type-c ポートでどの PC にも有線で繋げられる。
+キーボードは [HHKB Professional HYBRID Type-S](https://www.amazon.co.jp/HHKB-Professional-HYBRID-%E6%97%A5%E6%9C%AC%E8%AA%9E%E9%85%8D%E5%88%97%EF%BC%8F%E5%A2%A8-PD-KB820BS/dp/B082TSZ27D/) の日本語配列有刻印を使っている。Bluetooth で4台まで接続切り替えができる。またドック前面の type-c ポートでどの PC にも有線で繋げられる。
 
-https://www.amazon.co.jp/HHKB-Professional-HYBRID-%E6%97%A5%E6%9C%AC%E8%AA%9E%E9%85%8D%E5%88%97%EF%BC%8F%E5%A2%A8-PD-KB820BS/dp/B082TSZ27D/
+パームレストは [FILCO の漆塗りリストレスト　摺漆塗りS](https://www.diatec.co.jp/shop/det.php?prod_c=3652)。初期傷があって悲しい。
 
-パームレストは FILCO の漆塗りリストレスト　摺漆塗りS。初期傷があって悲しい。
+トラックパッドは純正の [Magic Trackpad 2](https://www.amazon.co.jp/Apple-Magic-Trackpad-2-MJ2R2J/dp/B016ZE7K8O)。Bluetooth でも繋げるが、私用/仕事の mac 間を切り替えるのにどのみち有線接続が必要で、一々つけるのも面倒ということで繋ぎっぱなしにしている。
 
-https://www.diatec.co.jp/shop/det.php?prod_c=3652
+書籍の左、サブモニタの下あたりにゲーム用のマウスがある。マウスは [Razer Viper Ultimate](https://www.amazon.co.jp/Razer-Ultimate-%E3%82%B2%E3%83%BC%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%9E%E3%82%A6%E3%82%B9-Chroma%E3%80%90%E6%97%A5%E6%9C%AC%E6%AD%A3%E8%A6%8F%E4%BB%A3%E7%90%86%E5%BA%97%E4%BF%9D%E8%A8%BC%E5%93%81%E3%80%91-RZ01-03050100-R3A1/dp/B07ZD46659/) で、常に充電スタンドに置いてある。
 
-トラックパッドは純正の Magic Trackpad 2。Bluetooth でも繋げるが、私用/仕事の mac 間を切り替えるのにどのみち有線接続が必要で、一々つけるのも面倒ということで繋ぎっぱなしにしている。
-
-https://www.amazon.co.jp/Apple-Magic-Trackpad-2-MJ2R2J/dp/B016ZE7K8O
-
-書籍の左、サブモニタの下あたりにゲーム用のマウスがある。マウスは Razer Viper Ultimate で、常に充電スタンドに置いてある。
-
-https://www.amazon.co.jp/Razer-Ultimate-%E3%82%B2%E3%83%BC%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%9E%E3%82%A6%E3%82%B9-Chroma%E3%80%90%E6%97%A5%E6%9C%AC%E6%AD%A3%E8%A6%8F%E4%BB%A3%E7%90%86%E5%BA%97%E4%BF%9D%E8%A8%BC%E5%93%81%E3%80%91-RZ01-03050100-R3A1/dp/B07ZD46659/
-
-黒いマットは ULTIMATE GUARD のプレイマットで、紙の遊戯王をしばくついでに普段使いしている。ウルトラプロのを使っていたが、カップ麺の油が飛んだ時に歪んでしまったのでこれに買い替えた。こちらの方が質感が良くて気に入っている。
-
-https://www.amazon.co.jp/Ultimate-Guard-UGD010193-%E3%83%97%E3%83%AC%E3%82%A4%E3%83%9E%E3%83%83%E3%83%88/dp/B00P9FJVAG/
+黒いマットは [ULTIMATE GUARD のプレイマット](https://www.amazon.co.jp/Ultimate-Guard-UGD010193-%E3%83%97%E3%83%AC%E3%82%A4%E3%83%9E%E3%83%83%E3%83%88/dp/B00P9FJVAG/) で、紙の遊戯王をしばくついでに普段使いしている。ウルトラプロのを使っていたが、カップ麺の油が飛んだ時に歪んでしまったのでこれに買い替えた。こちらの方が質感が良くて気に入っている。
 
 実は机上台の下に HHKB の 25周年モデル（雪）も置いてあるがほとんど使っていない。
 
@@ -135,20 +113,15 @@ https://www.amazon.co.jp/Ultimate-Guard-UGD010193-%E3%83%97%E3%83%AC%E3%82%A4%E3
 
 [![Image from Gyazo](https://i.gyazo.com/8b4fc2908a688481ac9debc5e2b0fa20.jpg)](https://i.gyazo.com/8b4fc2908a688481ac9debc5e2b0fa20.jpg)
 
-ドックは Belkin CONNECT Pro 12-in-1 Thunderbolt 4 Dock。値は張るが動作が安定しており穴も多い。何よりコンセプトである Thunderbolt で完結する環境には必須のアイテムだった（これをおすすめされた時にコンセプトを決めた）。
+ドックは [Belkin CONNECT Pro 12-in-1 Thunderbolt 4 Dock](https://www.amazon.co.jp/gp/product/B09KLLNTW4/)。値は張るが動作が安定しており穴も多い。何よりコンセプトである Thunderbolt で完結する環境には必須のアイテムだった（これをおすすめされた時にコンセプトを決めた）。
 
 正面から出ている Thunderbolt ケーブルを任意の PC につなぐことで、さまざまなデバイスをスムーズに移動できる（mac の場合は給電も兼ねる）。
 
-https://www.amazon.co.jp/gp/product/B09KLLNTW4/
+Bluetooth スピーカーは [Denon DSB250BT ポータブルワイヤレススピーカー Envaya](https://www.amazon.co.jp/gp/product/B0777KNQH2/)。aptX LL という低遅延接続のコーデックに対応していて、ゲームをやる上ではマスト要件だった。実際ほとんど遅延を感じないためかなり満足している（電源ボタンがマジで硬いのがマイナスポイント）。
 
-Bluetooth スピーカーは Denon DSB250BT ポータブルワイヤレススピーカー Envaya。aptX LL という低遅延接続のコーデックに対応していて、ゲームをやる上ではマスト要件だった。実際ほとんど遅延を感じないためかなり満足している（電源ボタンがマジで硬いのがマイナスポイント）。
+基本は Switch に接続しているが、Switch 本体の Bluetooth は aptX LL 非対応なため対応しているを [サンワサプライの Bluetooth トランスミッター](https://www.amazon.co.jp/gp/product/B091DJFVRH/) Switch に挿して使っている。
 
-基本は Switch に接続しているが、Switch 本体の Bluetooth は aptX LL 非対応なため対応しているトランスミッターを Switch に挿して使っている。
-
-https://www.amazon.co.jp/gp/product/B0777KNQH2/
-https://www.amazon.co.jp/gp/product/B091DJFVRH/
-
-手前のが Elgato Stream Deck MK.2。何者かよく聞かれるが、いわゆるストリーマー向けの叩き的なもので、15個のボタンにそれぞれアクションを割り振ることで1タッチで任意の操作ができるというもの。
+手前のが [Elgato Stream Deck MK.2](https://www.amazon.co.jp/Elgato-%E3%82%A8%E3%83%AB%E3%82%AC%E3%83%88%E3%82%B9%E3%83%88%E3%83%AA%E3%83%BC%E3%83%A0%E3%83%87%E3%83%83%E3%82%AF-MK-2%E3%80%9015%E3%82%AD%E3%83%BC%E9%85%8D%E5%88%97%E3%80%91%E3%83%A9%E3%82%A4%E3%83%96%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E4%BD%9C%E6%88%90%E7%94%A8%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC-%E9%85%8D%E4%BF%A1%E8%80%85%E5%90%91%E3%81%91%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9-YouTube%E9%80%A3%E6%90%BA-Mac/dp/B09738CV2G/)。何者かよく聞かれるが、いわゆるストリーマー向けの叩き的なもので、15個のボタンにそれぞれアクションを割り振ることで1タッチで任意の操作ができるというもの。
 
 マイク/スピーカーの入出力の切り替えや Voice Over 切り替え、Slack の勤怠コマンド、次のミーティングをブラウザで開くなど結構自由に設定できる。
 
@@ -162,12 +135,9 @@ https://www.amazon.co.jp/gp/product/B08PK6DNTZ/
 
 ### Wi-Fi 環境
 
-TP Link の Deco X60 でメッシュ Wi-Fi を導入した。各デバイスへは同じく TP Link の5ポートスイッチングハブ経由で有線で繋いでいる。置き場所に困ったが、カゴに入れてもう使っていないゲーミングPCの上に置いている。調子が良いときは上り下り共に500Mbps程度出る（回線は So-net の v6プラス）。専用のアプリもそこそこ使いやすい。
+TP Link の [Deco X60](https://www.amazon.co.jp/gp/product/B0873GL9F6/) でメッシュ Wi-Fi を導入した。各デバイスへは同じく [TP Link の5ポートスイッチングハブ](https://www.amazon.co.jp/%E3%80%90Amazon-co-jp%E9%99%90%E5%AE%9A%E3%80%91TP-Link-%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%83%B3%E3%82%B0%E3%83%8F%E3%83%96-1000Mbps-%E3%83%A9%E3%82%A4%E3%83%95%E3%82%BF%E3%82%A4%E3%83%A0%E4%BF%9D%E8%A8%BC-TL-SG105V4-0/dp/B00A128S24/) 経由で有線で繋いでいる。置き場所に困ったが、カゴに入れてもう使っていないゲーミングPCの上に置いている。調子が良いときは上り下り共に500Mbps程度出る（回線は So-net の v6プラス）。専用のアプリもそこそこ使いやすい。
 
 [![Image from Gyazo](https://i.gyazo.com/a8ab5aca29d3c1afa0e94487a24fed53.jpg)](https://i.gyazo.com/a8ab5aca29d3c1afa0e94487a24fed53.jpg)
-
-https://www.amazon.co.jp/gp/product/B0873GL9F6/
-https://www.amazon.co.jp/%E3%80%90Amazon-co-jp%E9%99%90%E5%AE%9A%E3%80%91TP-Link-%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%83%B3%E3%82%B0%E3%83%8F%E3%83%96-1000Mbps-%E3%83%A9%E3%82%A4%E3%83%95%E3%82%BF%E3%82%A4%E3%83%A0%E4%BF%9D%E8%A8%BC-TL-SG105V4-0/dp/B00A128S24/
 
 買った後に TP Link 周りできな臭いニュースが流れてきてそういうリスクもあるなぁとなった。まあ様子見。
 
@@ -189,67 +159,41 @@ https://www.amazon.co.jp/gp/product/B07WGPPZQK/
 
 [![Image from Gyazo](https://i.gyazo.com/6e87c15bc359d2af550fc46914f29adf.jpg)](https://i.gyazo.com/6e87c15bc359d2af550fc46914f29adf.jpg)
 
-Switch は有機ELモデルで友人から定価で買い取った。先ほども書いたがキャプチャボードを経由して HDMI スイッチャーに繋がっている。電源をつけるとメインモニタがゲーム画面に切り替わって便利。
+Switch は有機ELモデルで友人から定価で買い取った。先ほども書いたがキャプチャボードを経由して [HDMI スイッチャー](https://www.amazon.co.jp/gp/product/B08T1YXDDJ/) に繋がっている。電源をつけるとメインモニタがゲーム画面に切り替わって便利。
 
-https://www.amazon.co.jp/gp/product/B08T1YXDDJ/
-
-キャプチャボードは Elgato H690S。なぜか miyaoka さんが買ってくれたので使わせてもらってる。mac では OBS Link 経由での送信ができないらしく、OBS を使いたいなら Windows につなぐ必要がある（OBS でなくても専用のソフトであれば動く）。この環境であれば Thunderbolt を Windows に挿せば OK。
-
-https://www.amazon.co.jp/Elgato-%E3%82%B2%E3%83%BC%E3%83%A0%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%83%BC-%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%82%A8%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E5%BC%8F-%E4%BD%8E%E3%83%AC%E3%82%A4%E3%83%86%E3%83%B3%E3%82%B7%E3%83%BC-USB3-0/dp/B01DRWCOGA
+キャプチャボードは [Elgato H690S](https://www.amazon.co.jp/Elgato-%E3%82%B2%E3%83%BC%E3%83%A0%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%83%BC-%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%82%A8%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E5%BC%8F-%E4%BD%8E%E3%83%AC%E3%82%A4%E3%83%86%E3%83%B3%E3%82%B7%E3%83%BC-USB3-0/dp/B01DRWCOGA)。なぜか miyaoka さんが買ってくれたので使わせてもらってる。mac では OBS Link 経由での送信ができないらしく、OBS を使いたいなら Windows につなぐ必要がある（OBS でなくても専用のソフトであれば動く）。この環境であれば Thunderbolt を Windows に挿せば OK。
 
 PS5 はリビングにあるのでデカい画面でやりたいモチベーションのないゲームは Switch かゲーミング PC でやるようにしている。
 
 そのほかの小物もここに置いてある。白黒のだるまは会社の忘年会ビンゴで当たった。
 
-L字の台はニトリで買ったウォールシェルフの45cm。壁には穴が目立たないタイプの小さいピンで固定できる。
+L字の台はニトリで買った [ウォールシェルフの45cm](https://www.nitori-net.jp/ec/product/8131321s/)。壁には穴が目立たないタイプの小さいピンで固定できる。
 
-https://www.nitori-net.jp/ec/product/8131321s/
-
-チロシンは飲むと頭が良くなる。
-
-https://jp.iherb.com/pr/now-foods-l-tyrosine-500-mg-120-capsules/836
-
+[チロシン](https://jp.iherb.com/pr/now-foods-l-tyrosine-500-mg-120-capsules/836)は飲むと頭が良くなる。
 
 ### マイク&ヘッドホン
 
-Blue Yeti + Blue マイクアーム + Blue ショックマウントのセット。USB 接続でバスパワー給電できて便利。音質は可もなく不可もなくという感じだがガチのストリーマーでもないので十分だと思う。今買うなら新モデルの Yeti X を買うと良さそう。
+[Blue Yeti](https://www.amazon.co.jp/Blue-Microphones-%E3%82%B3%E3%83%B3%E3%83%87%E3%83%B3%E3%82%B5%E3%83%BC-BM400BT-2%E5%B9%B4%E9%96%93%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E4%BF%9D%E8%A8%BC/dp/B0822PMBTZ/) + [Blue マイクアーム](https://www.amazon.co.jp/gp/product/B0822PPK7P/) + [Blue ショックマウント](https://www.amazon.co.jp/gp/product/B0822NRR6W/) のセット。USB 接続でバスパワー給電できて便利。音質は可もなく不可もなくという感じだがガチのストリーマーでもないので十分だと思う。今買うなら新モデルの Yeti X を買うと良さそう。
 
-https://www.amazon.co.jp/Blue-Microphones-%E3%82%B3%E3%83%B3%E3%83%87%E3%83%B3%E3%82%B5%E3%83%BC-BM400BT-2%E5%B9%B4%E9%96%93%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E4%BF%9D%E8%A8%BC/dp/B0822PMBTZ/
-https://www.amazon.co.jp/gp/product/B0822PPK7P/
-https://www.amazon.co.jp/gp/product/B0822NRR6W/
-
-机の角にヘッドホンを釣っている。ヘッドホンは DROP + Sennheiser PC38Xで、まれに使うがすぐ頭が痛くなるので値段ほどの活躍はさせられてない（のもあってスピーカーを買った）。
+机の角にヘッドホンを釣っている。ヘッドホンは [DROP + Sennheiser PC38X](https://www.amazon.co.jp/Drop-Sennheiser-PC38X-%E3%82%B2%E3%83%BC%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%98%E3%83%83%E3%83%89%E3%82%BB%E3%83%83%E3%83%88-%E3%82%AA%E3%83%BC%E3%83%90%E3%83%BC%E3%82%A4%E3%83%A4%E3%83%BC%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%83%90%E3%83%83%E3%82%AF%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3/dp/B08TX6GQTB) で、まれに使うがすぐ頭が痛くなるので値段ほどの活躍はさせられてない（のもあってスピーカーを買った）。
 
 [![Image from Gyazo](https://i.gyazo.com/f3feff7c2fbd6ea87a268377383b9337.jpg)](https://i.gyazo.com/f3feff7c2fbd6ea87a268377383b9337.jpg)
 
-https://www.amazon.co.jp/Drop-Sennheiser-PC38X-%E3%82%B2%E3%83%BC%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%98%E3%83%83%E3%83%89%E3%82%BB%E3%83%83%E3%83%88-%E3%82%AA%E3%83%BC%E3%83%90%E3%83%BC%E3%82%A4%E3%83%A4%E3%83%BC%E3%82%AA%E3%83%BC%E3%83%97%E3%83%B3%E3%83%90%E3%83%83%E3%82%AF%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3/dp/B08TX6GQTB
-
-ヘッドホンスタンドは吉川優品のハンガーにもスタンドにもなるやつ。
-
-https://www.amazon.co.jp/gp/product/B07RHJ1QCK/
+ヘッドホンスタンドは[吉川優品のハンガーにもスタンドにもなるやつ](https://www.amazon.co.jp/gp/product/B07RHJ1QCK/)。
 
 ### 机
 
-かなでもののパインにX字の脚を合わせたもの。足にはマグネットのケーブルクリップでまとめた type-c ケーブルやまれに使う骨伝導イヤホンなどをくっつけている。
+[かなでもののパイン](https://kanademono.design/products/tt-k04) に [X字の脚](https://kanademono.design/collections/table-legs/products/x-k11) を合わせたもの。足には [マグネットのケーブルクリップ](https://www.amazon.co.jp/cheero-CHE-306-SET-CLIP-%E4%B8%87%E8%83%BD%E3%82%AF%E3%83%AA%E3%83%83%E3%83%97-%EF%BC%88%E5%85%A8%E8%89%B2%E3%82%BB%E3%83%83%E3%83%88%EF%BC%89/dp/B00I2JAJAW/) でまとめた type-c ケーブルやまれに使う骨伝導イヤホンなどをくっつけている。
 
 [![Image from Gyazo](https://i.gyazo.com/40033b6fcf3851ea08be16b1e49f7ef8.jpg)](https://i.gyazo.com/40033b6fcf3851ea08be16b1e49f7ef8.jpg)
 
-https://kanademono.design/products/tt-k04
-https://kanademono.design/collections/table-legs/products/x-k11
-https://www.amazon.co.jp/cheero-CHE-306-SET-CLIP-%E4%B8%87%E8%83%BD%E3%82%AF%E3%83%AA%E3%83%83%E3%83%97-%EF%BC%88%E5%85%A8%E8%89%B2%E3%82%BB%E3%83%83%E3%83%88%EF%BC%89/dp/B00I2JAJAW/
-
-骨伝導イヤホンは AfterShokz Aeropex。ただ椅子のヘッドレストに干渉して使い辛いのであまり活躍はしていない。
-
-https://www.amazon.co.jp/gp/product/B07RRQ59JR/
+骨伝導イヤホンは [AfterShokz Aeropex](https://www.amazon.co.jp/gp/product/B07RRQ59JR/)。ただ椅子のヘッドレストに干渉して使い辛いのであまり活躍はしていない。
 
 ### その他
 
 書籍を平積みしている。常に動かすものは雑に置いておけというポリシーがあるのでブックスタンドとかは考えていない。雑に管理しているからこそ雑に取り出せる（雑に扱えないと本は読まない）。対になるポリシーに使ったものは元の場所に戻せというのがある。
 
-今は HTML 解体新書とブルーベリー本を置いてある。
-
-https://www.amazon.co.jp/gp/product/4862465277/
-https://www.amazon.co.jp/gp/product/4297127474/
+今は [HTML 解体新書](https://www.amazon.co.jp/gp/product/4862465277/) と [ブルーベリー本](https://www.amazon.co.jp/gp/product/4297127474/) を置いてある。
 
 ## 終わりに
 
