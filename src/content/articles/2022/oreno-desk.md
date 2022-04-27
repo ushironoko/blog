@@ -1,5 +1,5 @@
 ---
-title: 俺のデスク環境大図解2022
+title: Thunderbolt1本で(なるべく)完結するデスクトップ環境を構築する
 description:
 publishedAt: 2022-04-27
 ---
