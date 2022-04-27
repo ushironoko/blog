@@ -1,5 +1,5 @@
 ---
-title: 俺のデスク図解2022
+title: 俺のデスク環境大図解2022
 description:
 publishedAt: 2022-04-27
 ---
