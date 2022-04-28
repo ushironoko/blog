@@ -119,7 +119,7 @@ RAM はノート PC 向けの SO-DIMM となる。グラボは 35cm までの大
 
 Bluetooth スピーカーは [Denon DSB250BT ポータブルワイヤレススピーカー Envaya](https://www.amazon.co.jp/gp/product/B0777KNQH2/)。aptX LL という低遅延接続のコーデックに対応していて、ゲームをやる上ではマスト要件だった。実際ほとんど遅延を感じないためかなり満足している（電源ボタンがマジで硬いのがマイナスポイント）。
 
-基本は Switch に接続しているが、Switch 本体の Bluetooth は aptX LL 非対応なため対応しているを [サンワサプライの Bluetooth トランスミッター](https://www.amazon.co.jp/gp/product/B091DJFVRH/) Switch に挿して使っている。
+基本は Switch に接続しているが、Switch 本体の Bluetooth は aptX LL 非対応なため対応している [サンワサプライの Bluetooth トランスミッター](https://www.amazon.co.jp/gp/product/B091DJFVRH/) をSwitch に挿して使っている。
 
 手前のが [Elgato Stream Deck MK.2](https://www.amazon.co.jp/Elgato-%E3%82%A8%E3%83%AB%E3%82%AC%E3%83%88%E3%82%B9%E3%83%88%E3%83%AA%E3%83%BC%E3%83%A0%E3%83%87%E3%83%83%E3%82%AF-MK-2%E3%80%9015%E3%82%AD%E3%83%BC%E9%85%8D%E5%88%97%E3%80%91%E3%83%A9%E3%82%A4%E3%83%96%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84%E4%BD%9C%E6%88%90%E7%94%A8%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9%E3%83%BC-%E9%85%8D%E4%BF%A1%E8%80%85%E5%90%91%E3%81%91%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9-YouTube%E9%80%A3%E6%90%BA-Mac/dp/B09738CV2G/)。何者かよく聞かれるが、いわゆるストリーマー向けの叩き的なもので、15個のボタンにそれぞれアクションを割り振ることで1タッチで任意の操作ができるというもの。
 
@@ -161,7 +161,7 @@ https://www.amazon.co.jp/gp/product/B07WGPPZQK/
 
 Switch は有機ELモデルで友人から定価で買い取った。先ほども書いたがキャプチャボードを経由して [HDMI スイッチャー](https://www.amazon.co.jp/gp/product/B08T1YXDDJ/) に繋がっている。電源をつけるとメインモニタがゲーム画面に切り替わって便利。
 
-キャプチャボードは [Elgato H690S](https://www.amazon.co.jp/Elgato-%E3%82%B2%E3%83%BC%E3%83%A0%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%83%BC-%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%82%A8%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E5%BC%8F-%E4%BD%8E%E3%83%AC%E3%82%A4%E3%83%86%E3%83%B3%E3%82%B7%E3%83%BC-USB3-0/dp/B01DRWCOGA)。なぜか miyaoka さんが買ってくれたので使わせてもらってる。mac では OBS Link 経由での送信ができないらしく、OBS を使いたいなら Windows につなぐ必要がある（OBS でなくても専用のソフトであれば動く）。この環境であれば Thunderbolt を Windows に挿せば OK。
+キャプチャボードは [Elgato HD60S](https://www.amazon.co.jp/Elgato-%E3%82%B2%E3%83%BC%E3%83%A0%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%83%BC-%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%82%A8%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%89%E5%BC%8F-%E4%BD%8E%E3%83%AC%E3%82%A4%E3%83%86%E3%83%B3%E3%82%B7%E3%83%BC-USB3-0/dp/B01DRWCOGA)。なぜか miyaoka さんが買ってくれたので使わせてもらってる。mac では OBS Link 経由での送信ができないらしく、OBS を使いたいなら Windows につなぐ必要がある（OBS でなくても専用のソフトであれば動く）。この環境であれば Thunderbolt を Windows に挿せば OK。
 
 PS5 はリビングにあるのでデカい画面でやりたいモチベーションのないゲームは Switch かゲーミング PC でやるようにしている。
 
