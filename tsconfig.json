@@ -30,6 +30,12 @@
       "@nuxt/types"
     ]
   },
+  "vueCompilerOptions": {
+    "experimentalCompatMode": 2, // delete after migrating to vue3 (or nuxt3)
+    "experimentalTemplateCompilerOptions": {
+      "compatConfig": { "MODE": 2 } // delete after migrating to vue3 (or nuxt3)
+    }
+  },
   "exclude": [
     "node_modules",
     ".nuxt",
