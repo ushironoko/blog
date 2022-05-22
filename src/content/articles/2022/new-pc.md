@@ -1,12 +1,12 @@
 ---
-title: 新しいパソコンを買った(NUC 12 Extreme Kitレビュー)
+title: 新しいパソコンを買った
 description:
-publishedAt: 2022-05-19
+publishedAt: 2022-05-22
 ---
 
 ゲーム用の PC を新調した。[デスクツアーの記事](https://ushironoko.me/articles/2022/oreno-desk)でも少し紹介したが、[intel NUC 12 Extream Kit](https://www.intel.co.jp/content/www/jp/ja/products/sku/216963/intel-nuc-12-extreme-kit-nuc12dcmi9/specifications.html) を買った。
 
-[![Image from Gyazo](https://i.gyazo.com/bacfeeb0a08c95c4f8709c51eabd94a5.jpg)](https://i.gyazo.com/bacfeeb0a08c95c4f8709c51eabd94a5.jpg)
+![本体](https://i.gyazo.com/bacfeeb0a08c95c4f8709c51eabd94a5.jpg)
 
 もともと持っていたゲーム用の PC は7年前にドスパラで買った BTO のもので、今でもそんなに悪くないスペックではあるが場所を取るしメンテしていくモチベもなかった。
 
@@ -51,7 +51,7 @@ Z690マザーには基本 M.2SSD をねじなしで固定できる仕組みが�
 
 動作速度はこんな感じ。
 
-[![Image from Gyazo](https://i.gyazo.com/5f74471d66bb10354e66ef86793ee440.png)](https://i.gyazo.com/5f74471d66bb10354e66ef86793ee440.png)
+![CrystalDiskMark](https://i.gyazo.com/6cc7fc22ae5635e668b7092264b93249.png)
 
 ### RAM
 
@@ -83,13 +83,13 @@ DX11 12th Gen Intel(R) Core(TM) i9-12900 NVIDIA GeForce RTX 3060 Ti(VRAM 8050 MB
 
 FF15ベンチマークでは以下のような結果だった。
 
-[![Image from Gyazo](https://i.gyazo.com/a97ed7ecea0648cd7a0706e476de8f79.png)](https://i.gyazo.com/a97ed7ecea0648cd7a0706e476de8f79.png)
+![FF15ベンチマーク](https://i.gyazo.com/a97ed7ecea0648cd7a0706e476de8f79.png)
 
 こちらも世に出ているベンチマーク結果より4000程度低く出た。重いシーンでカクつきが目立っており、重いベンチマークソフトだとこんなもんかという感じ。
 
-ちなみにCPUのほうはこんな感じ(Cinebench23)。
+ちなみにCPUのほうはこんな感じ。
 
-[![Image from Gyazo](https://i.gyazo.com/72b4dea78e99455503ee7a26d4513095.png)](https://i.gyazo.com/72b4dea78e99455503ee7a26d4513095.png)
+![Chinebench23](https://i.gyazo.com/72b4dea78e99455503ee7a26d4513095.png)
 
 こちらは11世代K付きモデルくらいのスコアになった。通常のベンチマークでは25000以上出ることから、CPU の方もリミットがかかっていることがわかる。
 
@@ -130,3 +130,4 @@ GPU のセクションでもあげたが搭載されている電源が650Wなの
 やはり NUC のコンパクトさでしかできないことはある。仕事とプライベートの両方で使いたいという人よりも、複数デスク環境間を簡単に切り替えたいという人に向いており、またミドルタワー以上の PC ケースの置き場がなく、机上に PC を置くしかない人にとっても良い選択肢になる。
 
 一方で同様のスペックを持ちつつより低価格なゲーミング PC も沢山あり、コスパ良くゲーム環境を作りたい人には向いていないと思う。総合的なパフォーマンスは平均よりも低く出るので、この記事を読み、30万払ってこれかぁと感じた人は買わなくて良さそう。
+
