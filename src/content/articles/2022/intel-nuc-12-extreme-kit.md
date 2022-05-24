@@ -51,7 +51,7 @@ Z690マザーには基本 M.2SSD をねじなしで固定できる仕組みが�
 
 動作速度はこんな感じ。
 
-[![Image from Gyazo](https://i.gyazo.com/5f74471d66bb10354e66ef86793ee440.png)](https://i.gyazo.com/5f74471d66bb10354e66ef86793ee440.png)
+[![Image from Gyazo](https://i.gyazo.com/6cc7fc22ae5635e668b7092264b93249.png)](https://i.gyazo.com/6cc7fc22ae5635e668b7092264b93249.png)
 
 ### RAM
 

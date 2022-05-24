@@ -46,4 +46,35 @@ main {
   @apply whitespace-normal;
 }
 
+.tweet {
+  @apply whitespace-normal w-full p-8 text-black border border-gray-200 bg-white rounded-2xl;
+}
+.tweet-header {
+  @apply flex items-center justify-between;
+}
+.tweet-author {
+  @apply relative flex items-center;
+}
+.tweet-author-image {
+  @apply w-12 h-12 rounded-full;
+}
+.tweet-author-info {
+  @apply ml-4;
+}
+.tweet-author-name {
+  @apply font-medium;
+}
+.tweet-author-handler {
+  @apply text-blue-400;
+}
+.tweet-logo {
+  @apply text-blue-400;
+}
+.tweet-content {
+  @apply mt-4;
+}
+.tweet-content a {
+  @apply text-blue-400;
+}
+
 @tailwind utilities;
