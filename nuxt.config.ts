@@ -226,12 +226,9 @@ const config: NuxtConfig = {
               }
             })
 
-            page.html = dom.serialize()
-
-            page = replaceList.reduce((acc, { target, staticHtml }) => {
-              acc.html = acc.html.replace(target, staticHtml)
-              return acc
-            }, page)
+            page.html = replaceList.reduce((acc, { target, staticHtml }) => {
+              return acc.replace(target, staticHtml)
+            }, dom.serialize())
           })
           .catch((err) => {
             consola.error(err)
