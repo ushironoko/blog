@@ -99,7 +99,7 @@ const config: NuxtConfig = {
       },
       ...preloadHtmlList({
         baseURL,
-        targetArticles: 'articles/2021',
+        targetArticles: 'articles/2022',
         maxLength: 5,
       }),
     ],
@@ -122,27 +122,16 @@ const config: NuxtConfig = {
       'ga-script': ['innerHTML'],
     },
   },
-
-  // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [],
-
-  // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
+  css: ['~/assets/css/tailwind.css'],
   plugins: [],
-
-  // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
-
-  // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
+    '@nuxt/postcss8',
     '@nuxtjs/composition-api/module',
     '@nuxtjs/google-analytics',
   ],
-
-  // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
@@ -150,7 +139,6 @@ const config: NuxtConfig = {
     ['@nuxtjs/sitemap', { hostname: baseURL }],
     '@nuxtjs/feed',
   ],
-
   feed: [
     {
       path: '/feed.xml',
@@ -160,12 +148,6 @@ const config: NuxtConfig = {
       data: ['articles', 'xml'],
     },
   ],
-
-  tailwindcss: {
-    jit: true,
-    configPath: '~~/tailwind.config.js',
-  },
-
   hooks: {
     'content:file:beforeInsert': (document) => {
       if (document.extension === '.md') {
@@ -236,12 +218,9 @@ const config: NuxtConfig = {
       },
     },
   },
-
   render: {
     injectScripts: false,
   },
-
-  // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {
     markdown: {
       rehypePlugins: [
@@ -256,10 +235,14 @@ const config: NuxtConfig = {
       },
     },
   },
-
-  // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
-
+  build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
+  },
   publicRuntimeConfig: {
     baseURL,
     googleAnalytics: {

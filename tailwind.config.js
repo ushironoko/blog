@@ -1,7 +1,11 @@
 module.exports = {
-  purge: {
-    content: ['content/**/*.md'],
-  },
+  content: [
+    './src/components/**/*.{js,vue,ts}',
+    './src/layouts/**/*.vue',
+    './src/pages/**/*.vue',
+    './src/plugins/**/*.{js,ts}',
+    './src/content/**/*.md',
+  ],
   darkMode: 'media',
   theme: {
     screens: {
