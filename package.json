@@ -42,7 +42,7 @@
     "@nuxtjs/google-analytics": "^2.4.0",
     "@types/axios": "^0.14.0",
     "@types/jsdom": "^16.2.14",
-    "@vue/runtime-dom": "latest",
+    "@vue/runtime-dom": "^3.2.37",
     "@vue/test-utils": "^1.1.4",
     "autoprefixer": "^10.4.7",
     "babel-core": "7.0.0-bridge.0",
