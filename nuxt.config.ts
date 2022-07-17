@@ -149,6 +149,7 @@ const config: NuxtConfig = {
     },
   ],
   hooks: {
+    // @ts-ignore
     'content:file:beforeInsert': (document) => {
       if (document.extension === '.md') {
         const { text } = getReadingTime(document)

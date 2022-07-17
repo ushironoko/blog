@@ -42,6 +42,7 @@ export default defineComponent({
     const {
       route,
       $config: { baseURL },
+      // @ts-ignore
       $content,
       params,
     } = useContext()
