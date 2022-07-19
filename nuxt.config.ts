@@ -196,7 +196,7 @@ const config: NuxtConfig = {
                 res.forEach(({ data }) => {
                   const {
                     html: staticHtml,
-                    oembed: { url },
+                    meta: { url },
                   } = data
 
                   if (aTag.parentElement && aTag.href === url) {

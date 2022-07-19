@@ -7,7 +7,7 @@ export type TweeticParams = {
 
 export type TweeticResponse = {
   html: string
-  oembed: {
+  meta: {
     url: string
     author_name: string
     author_url: string
