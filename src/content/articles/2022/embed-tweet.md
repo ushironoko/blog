@@ -6,7 +6,7 @@ publishedAt: 2022-05-24
 
 ブログにツイートを自動で埋め込みできるようにした。markdown の中にツイートへの直リンクがある場合、以下のように表示される。
 
-https://twitter.com/ushiro_noko/status/1524991474714062848
+https://twitter.com/ushiro_noko/status/123772055698153472
 
 通常の埋め込みツイートと少し違うが後述する API を用いていることが理由。
 
@@ -17,7 +17,7 @@ https://twitter.com/ushiro_noko/status/1524991474714062848
 ```ts
 {
   html: string
-  oembed: {
+  meta: {
     url: string
     author_name: string
     author_url: string
@@ -59,6 +59,11 @@ generate: {
             params: {
               layout: '',
               url,
+              css: '',
+              enable_twemoji: true,
+              show_media: true,
+              show_quoted_tweet: true,
+              show_info: true,
             } as TweeticParams,
           }
         )
@@ -97,6 +102,7 @@ generate: {
   },
 },
 ```
+
 なぜこうしたかというと API を使ってみたかったから以外ない。普通のツイート埋め込みに比べてツイートに対するアクションができなかったり、スレッドを作れなかったり、動画が再生できなかったりして不便ではある。また generate フックでやっているので `yarn dev` 中には結果を見ることができない。
 
 - 本当はスレッドと画像が表示される
@@ -117,3 +123,8 @@ https://twitter.com/miyaoka/status/1346853138259611648
 また miyaoka.dev　や zenn.dev のように WebComponents で実装することもできた（このブログもjsを全部抜いている）が、二番煎じは面白くないので没にした。
 
 https://miyaoka.dev/posts/2021-01-07-tweet-component
+
+## 追記
+
+2022/07
+tweeticio のアップデートでメディア表示ができるようになっていた。リクエストパラメータでフラグを付与すればおｋ。

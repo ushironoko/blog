@@ -5,6 +5,7 @@ module.exports = {
     './src/pages/**/*.vue',
     './src/plugins/**/*.{js,ts}',
     './src/content/**/*.md',
+    'dist/articles/**/*.html',
   ],
   darkMode: 'media',
   theme: {

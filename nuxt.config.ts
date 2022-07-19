@@ -181,6 +181,11 @@ const config: NuxtConfig = {
                 params: {
                   layout: '',
                   url,
+                  css: '',
+                  enable_twemoji: true,
+                  show_media: true,
+                  show_quoted_tweet: true,
+                  show_info: true,
                 } as TweeticParams,
               }
             )

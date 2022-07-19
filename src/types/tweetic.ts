@@ -3,6 +3,11 @@
 export type TweeticParams = {
   layout: '' | 'supabase'
   url: string
+  css: '' | 'tailwind'
+  enable_twemoji: boolean
+  show_media: boolean
+  show_quoted_tweet: boolean
+  show_info: boolean
 }
 
 export type TweeticResponse = {
