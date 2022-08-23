@@ -147,7 +147,7 @@ a {
 }
 
 .tweet {
-  width: 500px;
+  max-width: 500px;
   padding: 2rem;
   color: var(--text-primary);
   border: 1px solid var(--border);
