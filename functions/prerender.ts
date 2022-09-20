@@ -1,6 +1,6 @@
 import fs from 'fs'
 
-export const preloadHtmlList = ({
+export const getPrerenderTargets = ({
   baseURL,
   targetArticles,
   maxLength,

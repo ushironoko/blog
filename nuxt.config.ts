@@ -4,7 +4,7 @@ import readingTime from 'reading-time'
 import axios from 'axios'
 import consola from 'consola'
 import { JSDOM } from 'jsdom'
-import { preloadHtmlList } from './functions/prerender'
+import { getPrerenderTargets } from './functions/prerender'
 import type { TweeticParams, TweeticResponse } from './src/types/tweetic'
 
 let posts: any[] = []
@@ -97,7 +97,7 @@ const config: NuxtConfig = {
         type: 'image/x-icon',
         href: '/articles/images/ushironoko.jpg',
       },
-      ...preloadHtmlList({
+      ...getPrerenderTargets({
         baseURL,
         targetArticles: 'articles/2022',
         maxLength: 5,
