@@ -1,0 +1,27 @@
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  white-space: normal;
+}
+
+li > ul > li {
+  margin-left: 24px;
+}
+
+p {
+  font-family: 'Noto+Sans+JP';
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+}
+
+pre {
+  padding: 8px;
+  background-color: #eee;
+  border-radius: 4px;
+  white-space: pre-wrap;
+}

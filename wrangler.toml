@@ -1,0 +1,7 @@
+name = "blog-edge"
+main = "./.output/server/index.mjs"
+workers_dev = true
+compatibility_date = "2022-11-08"
+account_id = "af81e1592d06f7c3bc776cd6b1e9d316"
+[site]
+bucket = ".output/public"
