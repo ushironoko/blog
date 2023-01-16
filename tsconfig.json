@@ -1,44 +1,4 @@
 {
-  "compilerOptions": {
-    "target": "ES2018",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "lib": [
-      "ESNext",
-      "ESNext.AsyncIterable",
-      "DOM"
-    ],
-    "esModuleInterop": true,
-    "jsx": "preserve",
-    "allowJs": true,
-    "sourceMap": true,
-    "strict": true,
-    "noEmit": true,
-    "experimentalDecorators": true,
-    "baseUrl": ".",
-    "paths": {
-      "~/*": [
-        "./src/*"
-      ],
-      "@/*": [
-        "./src/*"
-      ]
-    },
-    "types": [
-      "@types/node",
-      "@nuxt/content",
-      "@nuxt/types"
-    ]
-  },
-  "vueCompilerOptions": {
-    "experimentalCompatMode": 2, // delete after migrating to vue3 (or nuxt3)
-    "experimentalTemplateCompilerOptions": {
-      "compatConfig": { "MODE": 2 } // delete after migrating to vue3 (or nuxt3)
-    }
-  },
-  "exclude": [
-    "node_modules",
-    ".nuxt",
-    "dist"
-  ]
+  // https://v3.nuxtjs.org/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json"
 }
