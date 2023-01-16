@@ -2,9 +2,9 @@
 import { Post } from '../types/posts';
 import { format } from 'date-fns';
 
-defineProps<{
+const props = defineProps<{
   postData: Post;
-  ogImageUrl: string;
+  ogImageUrlOrigin: (title: string) => string;
 }>();
 </script>
 
@@ -19,7 +19,7 @@ defineProps<{
               class="w-full"
               width="252"
               height="164"
-              :src="ogImageUrl"
+              :src="ogImageUrlOrigin(postData.title)"
             />
           </div>
           <div class="mt-2">
