@@ -1,7 +1,7 @@
 ---
 title: SSGの小さな実装を読む
 description:
-publishedAt: 2023-01-011
+publishedAt: 2023-01-11
 ---
 
 potato4d/dodai という小さな SSG 実装がある。詳しい話は本人のブログとかでいつか出そうな気もする。
