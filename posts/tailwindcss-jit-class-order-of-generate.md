@@ -48,10 +48,12 @@ export default defineComponent({
     focus: (event: Event) => true,
   },
   setup(props) {
-    const { isFocus, handleFocus } = useFocus({ eventName: 'focus' })
+    const { isFocus, handleFocus } = useFocus({ eventName: 'focus' });
 
     const focusedClass = computed(() =>
-      isFocus.value ? 'border-blue-700 ring-4 ring-blue-100 transition duration-100' : ''
+      isFocus.value
+        ? 'border-blue-700 ring-4 ring-blue-100 transition duration-100'
+        : ''
     );
 
     const listeners = computed(() => ({
@@ -85,9 +87,9 @@ mode: 'jit' 時
 
 https://tailwindcss.com/docs/just-in-time-mode#enabling-jit-mode
 
->Your CSS is identical in development and production.
+> Your CSS is identical in development and production.
 
-直接見た方が早そうなので html に埋め込まれているユーティリティクラスを見たら、ちゃんと出力されていた。ちなみに tailwind.css 内で Preflight を読み込んでいる場合 base → utilityの順だと長すぎてユーティリティクラスが省略されてしまうので utility → base の順に読み込ませておくと良い。
+直接見た方が早そうなので html に埋め込まれているユーティリティクラスを見たら、ちゃんと出力されていた。ちなみに tailwind.css 内で Preflight を読み込んでいる場合 base → utility の順だと長すぎてユーティリティクラスが省略されてしまうので utility → base の順に読み込ませておくと良い。
 
 ![ちゃんとblueが生成されていることがわかる写真](https://i.gyazo.com/5be38c1f01854c75137fd4129c064da7.png)
 
@@ -114,7 +116,9 @@ assets/tailwind.css
 
 ```ts
 const focusedClass = computed(() =>
-  isFocus.value ? 'border-blue-700 ring-4 ring-blue-100 transition duration-100' : 'border-gray-300'
+  isFocus.value
+    ? 'border-blue-700 ring-4 ring-blue-100 transition duration-100'
+    : 'border-gray-300'
 );
 ```
 

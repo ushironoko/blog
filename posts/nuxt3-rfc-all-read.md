@@ -22,11 +22,11 @@ export default defineNuxtConfig({
     '/stats/*': { swr: '10 min' }, // Once on-demand each 10 minutes (via lambda)
     '/admin/*': { ssr: false }, // Client-Side rendered
     '/react/*': { redirect: '/vue' }, // Redirect Rules
-  }
-})
+  },
+});
 ```
 
-Nuxt 2では `ssr` プロパティ（旧 `mode` プロパティ）によってアプリケーションを CSR にするか SSR にするか、また `target` プロパティにて Static（SG）にするかを選択できたが、ページ単位での設定はサポートされていなかった。
+Nuxt 2 では `ssr` プロパティ（旧 `mode` プロパティ）によってアプリケーションを CSR にするか SSR にするか、また `target` プロパティにて Static（SG）にするかを選択できたが、ページ単位での設定はサポートされていなかった。
 
 この rfc では CSR/SSR/SG 以外に SWR や リダイレクトの設定等も `routes` プロパティ内で出来るようになるとなっている。また、互換性維持やシンプルな設定手法として旧 API も引き続き使えるようになっている。
 
@@ -42,7 +42,7 @@ Nuxt 2では `ssr` プロパティ（旧 `mode` プロパティ）によって�
 
 ## [Meta SEO and PWA tags](https://github.com/nuxt/framework/discussions/1823)
 
-Nuxt PWA Module には適切な PWA と SEO 管理のための統合的な　meta　タグを設定できるプリセットがあり、昨今の事情を鑑みるとどのようなアプリケーションにもそれらの　meta　タグ設定は重宝されるものとなった。ので、module にある meta タグプロパティのいくつかを本体に移植し、本体の持つユーティリティ合成関数との統合もしようというやつ。
+Nuxt PWA Module には適切な PWA と SEO 管理のための統合的な　 meta 　タグを設定できるプリセットがあり、昨今の事情を鑑みるとどのようなアプリケーションにもそれらの　 meta 　タグ設定は重宝されるものとなった。ので、module にある meta タグプロパティのいくつかを本体に移植し、本体の持つユーティリティ合成関数との統合もしようというやつ。
 
 デフォルトでは以下が使える。
 
@@ -59,24 +59,24 @@ Nuxt PWA Module には適切な PWA と SEO 管理のための統合的な　met
 ```ts
 export default defineNuxtConfig({
   meta: {
-    charset: 'utf-8'
-  }
-})
+    charset: 'utf-8',
+  },
+});
 ```
 
 ```ts
 useMeta({
-  author: 'Jon Doe'
-})
+  author: 'Jon Doe',
+});
 ```
 
 または Nuxt3 から利用できるようになった [Meta コンポーネント](https://github.com/nuxt/framework/blob/850ef69a878294bb2854fdfe07d1d8bc71d0d52d/packages/nuxt3/src/meta/runtime/components.ts)を使う。
 
 ```vue
 <template>
-<div>
-   <Meta :lang="article.lang" />
-</div>
+  <div>
+    <Meta :lang="article.lang" />
+  </div>
 </template>
 ```
 
@@ -86,7 +86,7 @@ useMeta({
 
 ## [Handling unhandled runtime errors](https://github.com/nuxt/framework/discussions/559)
 
-ちょっと難しいが、現状のエラーハンドリング機能では拾いきれないものがあり、それを改善したいという話。特にサーバーとクライアントの両方で実行されるコードは、エラーの扱いが難しい（isomorphicって久しぶりに聞いた）。
+ちょっと難しいが、現状のエラーハンドリング機能では拾いきれないものがあり、それを改善したいという話。特にサーバーとクライアントの両方で実行されるコードは、エラーの扱いが難しい（isomorphic って久しぶりに聞いた）。
 
 また、Nuxt のデフォルトで用意されているエラーページのカスタムの難易度が高めだったり、リアクティブに動作しないなどの問題点も指摘されており、これらを一挙に解決するための統合的なエラーフレームワークが必要とのこと。
 
@@ -98,7 +98,6 @@ useMeta({
 
 余談だが Nuxt がデフォルトで持っているページは Nuxt Design というところで管理されているのを知った。
 https://github.com/nuxt/design
-
 
 ## [Moving Nitro to standalone bundler](https://github.com/nuxt/framework/discussions/1690)
 
@@ -120,46 +119,44 @@ Nuxt 依存部分に関しては `nitro-plugin-vue` のような Vite でも採�
 
 ## [Shortcuts to add vue plugins](https://github.com/nuxt/framework/discussions/1175)
 
-Vue 2系と3系の Vue Plugin を透過的に読み込めるようにする機能を追加するというもの。コードを見ると早い。
+Vue 2 系と 3 系の Vue Plugin を透過的に読み込めるようにする機能を追加するというもの。コードを見ると早い。
 
 Nuxt module の中で読み込むこともできる。が、あまり使われなそうではある。
 
 ```ts
-import { defineNuxtModule, addVuePlugin } from '@nuxt/kit'
+import { defineNuxtModule, addVuePlugin } from '@nuxt/kit';
 
 export default defineNuxtModule({
   setup() {
-     addVuePlugin({
-       import: 'vue-gtag',
-       options: {}
-     })
-  }
-})
+    addVuePlugin({
+      import: 'vue-gtag',
+      options: {},
+    });
+  },
+});
 ```
 
 nuxt.config.js で直接読み込むこともできる。従来では一度 plugins ディレクトリ内で Vue.use する必要があった。
 
 ```ts
-import { defineNuxtConfig } from 'nuxt3' // or @nuxt/bridge
+import { defineNuxtConfig } from 'nuxt3'; // or @nuxt/bridge
 
 export default defineNuxtConfig({
   vue: {
-    plugins: [
-      'vue-gtag'
-    ]
-  }
-})
+    plugins: ['vue-gtag'],
+  },
+});
 ```
 
 plugins ディレクトリで従来のように読み込む場合 `Vue.use` の代わりにこうなる。nuxt.config.js 側での設定は不要っぽい。
 
 ```ts
-import { defineNuxtPlugin } from '#app'
-import VueGtag from 'vue-gtag'
+import { defineNuxtPlugin } from '#app';
+import VueGtag from 'vue-gtag';
 
 export default defineNuxtPlugin(() => {
-  useVuePlugin(VueGVueGtagtag)
-})
+  useVuePlugin(VueGVueGtagtag);
+});
 ```
 
 内部では Vue2 Plugin であれば `Vue.use`、Vue3 Plugin であれば `app.use` が自動で使われるので、プラグインの移行も容易になる。
@@ -168,7 +165,7 @@ export default defineNuxtPlugin(() => {
 
 従来の plugins 配下での登録 + nuxt.config.js への登録は若干の煩わしさがあったものの、アプリケーション初期化前に `Vue.use` をするというのが明確だったのでそこまで問題に感じていなかった。
 
-一方で2系から3系へ移植するとなると、グローバル APIの変更がネックになることもありうるため、Nuxt がその部分を吸収するというのは嬉しいポイント。モジュール内でプラグインを使うというのはおそらくモジュール開発者特有の手法なのであまり気にしなくても良さそう。
+一方で 2 系から 3 系へ移植するとなると、グローバル API の変更がネックになることもありうるため、Nuxt がその部分を吸収するというのは嬉しいポイント。モジュール内でプラグインを使うというのはおそらくモジュール開発者特有の手法なのであまり気にしなくても良さそう。
 
 ## [Minimum Node.js version](https://github.com/nuxt/framework/discussions/1234)
 
@@ -184,42 +181,42 @@ Node.js バージョンアップ作業は虚無寄りなので頻繁にやりた
 
 ここで言われている議題に対しての解答は特に持ってないので、議論が進むのを眺めます。
 
-
 ## [Better pick API with `useAsyncData` and `useFetch`](https://github.com/nuxt/framework/discussions/1407)
 
 Nuxt3 の `useAsyncData` や `useFetch` には `pick` というオプションがあり、レスポンスがオブジェクトの場合 pick で渡したキーの配列に該当する部分のみを得られる。
 
 ```ts
 /**
-* レスポンスイメージ
-* {
-*   name: 'ushironoko',
-*   age: 27,
-*   info: {
-*    blog: 'https://ushironoko.me',
-*    social: {
-*     twitter: 'https://twitter.com/ushiro_noko',
-*     github: 'https://github.com/ushironoko',
-*    }
-*   }
-* }
-*
-*/
+ * レスポンスイメージ
+ * {
+ *   name: 'ushironoko',
+ *   age: 27,
+ *   info: {
+ *    blog: 'https://ushironoko.me',
+ *    social: {
+ *     twitter: 'https://twitter.com/ushiro_noko',
+ *     github: 'https://github.com/ushironoko',
+ *    }
+ *   }
+ * }
+ *
+ */
 
 // user: { name: 'ushironoko, age: 27 }
-const { data: user } = useFetch('/path/to/data', { pick: ['name', 'age'] })
+const { data: user } = useFetch('/path/to/data', { pick: ['name', 'age'] });
 ```
 
 この機能は現状トップレベルのキーしか対応しておらず、上記の例で言えば `info.blog` と `info.social` はピックできない。これを出来るようにしたいというのがこの rfc 。
 
-API の提案としては4つ出ているが、素材を生かした形式が今のところ人気。
+API の提案としては 4 つ出ているが、素材を生かした形式が今のところ人気。
 
 ```ts
 // user: { name: 'ushironoko, age: 27, info: { social: { twitter: 'https://twitter.com/ushiro_noko' } } }
 const { data: user } = await useFetch('/path/to/data', {
-  pick: [ 'name', 'age', 'info.social.twitter' ]
-})
+  pick: ['name', 'age', 'info.social.twitter'],
+});
 ```
+
 ### 所感
 
 まだ全然 Nuxt3 を触っていないのでこのオプションの存在もあるという程度でしか認識していなかったが、確かにあると便利そうな機能。複雑な加工や副作用は `transform` でやればいいので好みは分かれそう。また pick 内の型推論がどうなるのか気になるところではある。文字列で指定すると無理そうだけど…。
@@ -230,15 +227,15 @@ const { data: user } = await useFetch('/path/to/data', {
 
 Composition API の導入で、ユーザーランドでグローバルな状態管理（Vue ライフサイクルによらない共有状態の管理）が容易に行えるようになったが、引き続き SSR や devtools 等のサポートがされたツールは必要とされるケースはある。
 
-v-tokyo#14 でも共有された通り、現状 Nuxt3 でそれらがサポートされたグローバルストアを構築するには [Vuex5](https://github.com/kiaking/vuex-ideas) と [Pinia](https://github.com/posva/pinia) という2つの選択肢があり、この rfc では Nuxt が特定のライブラリを採用するのではなく、どちらも動作するような状態をとることがベストとされている。
+v-tokyo#14 でも共有された通り、現状 Nuxt3 でそれらがサポートされたグローバルストアを構築するには [Vuex5](https://github.com/kiaking/vuex-ideas) と [Pinia](https://github.com/posva/pinia) という 2 つの選択肢があり、この rfc では Nuxt が特定のライブラリを採用するのではなく、どちらも動作するような状態をとることがベストとされている。
 
-また、上記二つとは別にコアが提供するストアサポートも用意し、3つのストアの API を寄せることでユーザーが適宜好きなものを選択できるようにする、とある。
+また、上記二つとは別にコアが提供するストアサポートも用意し、3 つのストアの API を寄せることでユーザーが適宜好きなものを選択できるようにする、とある。
 
 ### 所感
 
 Pinia と Vuex5 は非常に似た API になっており、互換性があるとまで言われているためこの部分を Nuxt がサポートするのは筋が良いように思う。従来の Vuex 運用では Flux の文脈が強く、ロジックの肥大化や開発者側の拡大解釈によるカオス化の歴史を辿っていたが、よりシンプルに洗練されたグローバルステートが選べるということになる。
 
-一方で Nuxt2 からの移行に関しては引き続き素直に行きそうもなく、Vuex を主とした運用を行なっていた場合かなり厳しいだろうという印象。Vuex 自体旧 API を使うのであれば4系でと言っているし、コアの提供するストアが Pinia や Vuex5 に寄せられるならマイグレーション先がないに等しい。しばらくは Vuex4 のままこれらの恩恵を受けられない状態が続きそう。
+一方で Nuxt2 からの移行に関しては引き続き素直に行きそうもなく、Vuex を主とした運用を行なっていた場合かなり厳しいだろうという印象。Vuex 自体旧 API を使うのであれば 4 系でと言っているし、コアの提供するストアが Pinia や Vuex5 に寄せられるならマイグレーション先がないに等しい。しばらくは Vuex4 のままこれらの恩恵を受けられない状態が続きそう。
 
 ## [Support WebAssembly](https://github.com/nuxt/framework/discussions/692)
 
@@ -279,7 +276,7 @@ package.json をみて自動インストールすることもできるが、こ�
 
 ## [State Controller](https://github.com/nuxt/framework/discussions/730)
 
-今の Nuxt は起動プロセスが複雑化し、内部で何が起こっているか視覚化することが難しい。state machineを作り、プロセスの可視化支援や Nuxt hook 、CLI のサポートなどをしたいらしい。
+今の Nuxt は起動プロセスが複雑化し、内部で何が起こっているか視覚化することが難しい。state machine を作り、プロセスの可視化支援や Nuxt hook 、CLI のサポートなどをしたいらしい。
 ディスカッション内で既にいくつかの起動プロセスが可視化されている。
 
 ### 所感
@@ -290,4 +287,4 @@ package.json をみて自動インストールすることもできるが、こ�
 
 個人的に一番注目しているのはやっぱり `Moving Nitro to standalone bundler` で、Nitro という未来志向の技術にとってはその路線が一番実力を出せるだろうと思っている。
 
-rfc の中にはユーザーランドに近いものや何を言ってるのか分からないものまであったが、概ね2系の頃に言われていた課題に対する解答はあった印象。しらんけど。
+rfc の中にはユーザーランドに近いものや何を言ってるのか分からないものまであったが、概ね 2 系の頃に言われていた課題に対する解答はあった印象。しらんけど。

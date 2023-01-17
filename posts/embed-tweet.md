@@ -12,23 +12,23 @@ https://twitter.com/ushiro_noko/status/123772055698153472
 
 ## 実装
 
-[tweetic.io](https://www.tweetic.io/) というツイートを静的な HTML に変換して返してくれる API をつかった。HTML 文字列の他にツイートURLなど以下の形式の付属情報も返してくれる。
+[tweetic.io](https://www.tweetic.io/) というツイートを静的な HTML に変換して返してくれる API をつかった。HTML 文字列の他にツイート URL など以下の形式の付属情報も返してくれる。
 
 ```ts
 {
-  html: string
+  html: string;
   meta: {
-    url: string
-    author_name: string
-    author_url: string
-    html: string
-    width: number | null
-    height: number | null
-    type: string
-    cache_age: string
-    provider_name: string
-    provider_url: string
-    version: string
+    url: string;
+    author_name: string;
+    author_url: string;
+    html: string;
+    width: number | null;
+    height: number | null;
+    type: string;
+    cache_age: string;
+    provider_name: string;
+    provider_url: string;
+    version: string;
   }
 }
 ```
@@ -36,7 +36,6 @@ https://twitter.com/ushiro_noko/status/123772055698153472
 `yarn generate` 時のフックに以下のような処理を書くことで、レンダリング前の HTML に API から返却された HTML を差し込む形で実装した。
 
 ざっくり言えば `yarn generate` 時に html に含まれるツイートへの直リンクを正規表現で取得して、tweetic.io の API を Promise.all する。帰ってきた HTML を `page.html` に対して順番に差し込んでいくようにしている。
-
 
 nuxt.config.ts
 
@@ -109,18 +108,17 @@ generate: {
 
 https://twitter.com/miyaoka/status/1346664808402206721
 
-
 - 本当はメディアが再生できる
 
 https://twitter.com/miyaoka/status/1346853138259611648
 
-またビルドするごとに API コールするためエコではない。Nuxt 3に移行して ISR できるようになればこの問題は解決するが、その他の不便さは API が頑張ってくれるしかない気もしている。
+またビルドするごとに API コールするためエコではない。Nuxt 3 に移行して ISR できるようになればこの問題は解決するが、その他の不便さは API が頑張ってくれるしかない気もしている。
 
 ## 没案
 
 当初は hast や rehype プラグインを使って ast からごにょごにょしようとしていたが、やっていくうちに DOM API が使いたくなり、hast to DOM をしてみたが jsdom で良い感が強くこのやり方に落ち着いた。
 
-また miyaoka.dev　や zenn.dev のように WebComponents で実装することもできた（このブログもjsを全部抜いている）が、二番煎じは面白くないので没にした。
+また miyaoka.dev 　や zenn.dev のように WebComponents で実装することもできた（このブログも js を全部抜いている）が、二番煎じは面白くないので没にした。
 
 https://miyaoka.dev/posts/2021-01-07-tweet-component
 

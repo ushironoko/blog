@@ -1,5 +1,5 @@
 ---
-title: Thunderbolt1本で完結するデスクトップ環境を構築する
+title: ケーブル1本で完結するデスクトップ環境を作る
 description:
 publishedAt: 2022-04-27
 ---

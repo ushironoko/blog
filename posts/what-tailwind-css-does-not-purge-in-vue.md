@@ -1,10 +1,10 @@
 ---
-title: VueにおいてTailwind CSSは何をパージしないか
+title: VueにおいてTailwindCSSは何をパージしないか
 description: Tailwindしぐさ
 publishedAt: 2021-03-02
 ---
 
-Tailwind CSSというのがある。
+Tailwind CSS というのがある。
 
 https://tailwindcss.com/
 
@@ -24,11 +24,11 @@ https://tailwindcss.com/docs/optimizing-for-production
 </template>
 
 <script setup>
-const color = 'text-green-500'
+const color = 'text-green-500';
 </script>
 ```
 
-上記の例から察するに、Vueではjs実行後のテンプレートに対して正規表現がかけられているのだろうと思った。しかし、実際はもっと雑な（公式表現を借りるとナイーブな）実装になっているようだ。
+上記の例から察するに、Vue では js 実行後のテンプレートに対して正規表現がかけられているのだろうと思った。しかし、実際はもっと雑な（公式表現を借りるとナイーブな）実装になっているようだ。
 
 ```vue
 <template>
@@ -36,18 +36,18 @@ const color = 'text-green-500'
   <span>text-blue-500</span> ←パージされない
 </template>
 <script setup>
-const color = 'text-green-500' // パージされない
+const color = 'text-green-500'; // パージされない
 </script>
 ```
 
-つまり、tailwindはSFCファイル全体を見てユーティリティクラスに完全一致する文字列が存在すれば、そのクラスをパージしない。処理自体は間違いなくjs実行前に行われているので以下の例では検知できずにパージされる。
+つまり、tailwind は SFC ファイル全体を見てユーティリティクラスに完全一致する文字列が存在すれば、そのクラスをパージしない。処理自体は間違いなく js 実行前に行われているので以下の例では検知できずにパージされる。
 
 ```vue
 <template>
   <p :class="`text-${color}-500`">そのクラス、消えるよ</p>
 </template>
 <script setup>
-const color = 'green'
+const color = 'green';
 </script>
 ```
 
@@ -55,9 +55,9 @@ const color = 'green'
 
 https://github.com/windicss/vue-windicss-preprocess
 
-こちらであればオンデマンドで常に必要なユーティリティクラスしか生成しないため動的なクラス名の組み立てでも問題なく、設定ファイルのパージ対象の記述も消せると考えた。Vueではvue-loader上で動作する。
+こちらであればオンデマンドで常に必要なユーティリティクラスしか生成しないため動的なクラス名の組み立てでも問題なく、設定ファイルのパージ対象の記述も消せると考えた。Vue では vue-loader 上で動作する。
 
-しかし、windicssの場合もscirptブロック側で定義しテンプレートで参照していないユーティリティクラスはパージ対象にならないようだった。
+しかし、windicss の場合も scirpt ブロック側で定義しテンプレートで参照していないユーティリティクラスはパージ対象にならないようだった。
 
 ```vue
 <template>
@@ -65,16 +65,15 @@ https://github.com/windicss/vue-windicss-preprocess
 </template>
 
 <script setup>
-const color = 'text-green-500'
+const color = 'text-green-500';
 </script>
-
 ```
 
 ![パージされずにクラスが生成されていることがわかる写真](https://i.gyazo.com/f176906777f304f2ce251f7bf939beed.png)
 
 また動的に文字列を組み立てた場合は検知できずパージされてしまっていた（開発モード）。
 
-tailwindをそのまま使った方
+tailwind をそのまま使った方
 
 ```vue
 <template>
@@ -82,7 +81,7 @@ tailwindをそのまま使った方
 </template>
 
 <script setup>
-const colorNumber = '500'
+const colorNumber = '500';
 </script>
 ```
 
@@ -94,17 +93,16 @@ windicss
 </template>
 
 <script setup>
-const colorNumber = '500'
+const colorNumber = '500';
 </script>
-
 ```
 
 ![tailwindそのままとwindicssの場合の結果を比較した写真](https://i.gyazo.com/6a4d09bb197cf3b00b8dde674d335ea1.png)
 
-tailwindをそのまま使った方も、プロダクションビルド時にはパージされる。パージされるのが早いか遅いかくらいの違いしかなかった。windicssのパージ処理を深く追っていないので詳細は分からないが、vue-loader上でSFCファイル内を正規表現にかけるみたいなことをやっているだけかもしれない。
+tailwind をそのまま使った方も、プロダクションビルド時にはパージされる。パージされるのが早いか遅いかくらいの違いしかなかった。windicss のパージ処理を深く追っていないので詳細は分からないが、vue-loader 上で SFC ファイル内を正規表現にかけるみたいなことをやっているだけかもしれない。
 
 ## 結論
 
-- SFCファイル内でユーティリティクラスに完全一致する文字列があったらそれはパージしない
+- SFC ファイル内でユーティリティクラスに完全一致する文字列があったらそれはパージしない
 - 文字列組み立てされていると検知できずにパージされる
-- windicssのようなPurge CSSに依存していないライブラリでも同じ挙動になるっぽい
+- windicss のような Purge CSS に依存していないライブラリでも同じ挙動になるっぽい

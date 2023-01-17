@@ -45,7 +45,7 @@ https://github.com/nuxt/nuxt.js/blob/dev/packages/vue-app/template/utils.js#L131
 呼び出し箇所
 https://github.com/nuxt/nuxt.js/blob/6f94b1f9d7205b5de9215bdc16b7a9f67a61a0c6/packages/vue-app/template/client.js#L232-L244
 
-第二引数に渡している関数は最終的に `applyAsyncData` へコンポーネントを渡す。`render` 内部の処理と違うのは、この時サーバー側で `asyncData` が呼ばれていた時にはその値をマージする処理を実行すること。つまり、この時の `resolveComponents` の呼び出しはサーバーで解決された値をマージするためのものと考えられる（`applyAsyncData` を CSR 用と SSR の値マージ用で2回呼ばないといけない）。
+第二引数に渡している関数は最終的に `applyAsyncData` へコンポーネントを渡す。`render` 内部の処理と違うのは、この時サーバー側で `asyncData` が呼ばれていた時にはその値をマージする処理を実行すること。つまり、この時の `resolveComponents` の呼び出しはサーバーで解決された値をマージするためのものと考えられる（`applyAsyncData` を CSR 用と SSR の値マージ用で 2 回呼ばないといけない）。
 
 この処理の後、`render` 関数が実行され、コンポーネントの `asyncData` が CSR として実行され、その後に mount 関数が発火してマウントされる。このように `asyncData` を用いたクライアントレンダリングの場合も、データの取得が終わるまでマウントが開始されず、レンダリングブロックという形になる。
 
@@ -68,7 +68,6 @@ https://github.com/nuxt/nuxt.js/blob/dev/packages/vue-app/template/components/nu
 ### 要約
 
 Nuxt は Nuxt に設定された定義を Vue に登録してインスタンスを作り、ページルーティングが確定した後ページコンポーネントの asyncData をコール、その際サーバー側でも呼び出されていた場合は context から値を取り出してマージし、マウントされる。
-
 
 ## @nuxtjs/composition-api の useAsync
 

@@ -22,5 +22,11 @@ export default defineEventHandler(async (event) => {
     id: query.id,
     contentHtml,
     ...matterResult.data,
+  } as {
+    id: typeof query.id;
+    contentHtml: typeof contentHtml;
+    title: string;
+    description: string;
+    publishedAt: string;
   };
 });

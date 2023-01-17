@@ -6,7 +6,7 @@
     "generate": "nuxi generate",
     "preview": "nuxi preview",
     "postinstall": "nuxi prepare",
-    "fix": "prettier --write 'src/**/*.{ts,vue}'"
+    "fix": "prettier --write './**/*.{ts,vue,md}'"
   },
   "devDependencies": {
     "@nuxtjs/google-fonts": "^3.0.0-1",

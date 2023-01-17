@@ -14,7 +14,7 @@ module.exports = {
     content: ['content/**/*.md'],
   },
   darkMode: 'media',
-}
+};
 ```
 
 - layouts でダークモード時の背景色＆文字色を指定
