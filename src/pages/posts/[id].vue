@@ -17,7 +17,7 @@ useHead({
   meta: [
     {
       name: 'twitter:card',
-      content: 'summary_large_card',
+      content: 'summary_large_image',
     },
     {
       name: 'twitter:site',
@@ -48,10 +48,6 @@ useHead({
       name: 'og:description',
       content:
         description ?? 'ushironokoのブログです。技術・ゲーム・趣味・仕事など。',
-    },
-    {
-      property: 'og:type',
-      content: 'websit',
     },
     {
       property: 'og:type',
