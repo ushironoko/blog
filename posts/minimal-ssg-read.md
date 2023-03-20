@@ -6,9 +6,9 @@ publishedAt: 2023-01-11
 
 potato4d/dodai という小さな SSG 実装がある。詳しい話は本人のブログとかでいつか出そうな気もする。
 
-https://github.com/potato4d/dodai
+[https://github.com/potato4d/dodai](https://github.com/potato4d/dodai)
 
-中身は `ReactDOMServer.renderToStaticMarkup` などを用いて React コンポーネントを HTML 文字列化し、`src/pages` 配下を `dist/` へコピー、拡張子を `.html` にして吐き出すだけのシンプルなものになっている。Promise.all で各ページを逐次処理するため、例えばそれぞれのページに必要な分の TailwindCSS ユーティリティクラスのみをインラインスタイルに埋め込むなどの処理も容易に実装できるだろう(後述のije/htmlがやっている)。
+中身は `ReactDOMServer.renderToStaticMarkup` などを用いて React コンポーネントを HTML 文字列化し、`src/pages` 配下を `dist/` へコピー、拡張子を `.html` にして吐き出すだけのシンプルなものになっている。Promise.all で各ページを逐次処理するため、例えばそれぞれのページに必要な分の TailwindCSS ユーティリティクラスのみをインラインスタイルに埋め込むなどの処理も容易に実装できるだろう(後述の ije/html がやっている)。
 
 HotReload の実装もあり、`./src` 配下を chokidor で監視して変更があればページリロードをするだけのこれもまたシンプルな実装。開発時と本番時でビルドに持ちいるコードは同じものになっていて、常に `./dist` には Production Ready なコードが置かれるようになっている。
 
@@ -16,7 +16,7 @@ HotReload の実装もあり、`./src` 配下を chokidor で監視して変更�
 
 続いて `ije/html` も読んだ。こちらは tsx で書かれたテンプレートを `Preact.renderToString` で html にし、`html/text` なレスポンスとして返すライブラリになっている。deno 製で、実行ファイルを直接指定して起動する。
 
-https://github.com/ije/html
+[https://github.com/ije/html](https://github.com/ije/html)
 
 tsx を `renderToString` する点は dodai と同じで、吐き出した文字列を html にするかレスポンスにするかの違い。また組み込みで UnoCSS に対応しており、テンプレート上のユーティリティクラスから css を生成してインラインへ埋め込む処理がある。UnoCSS は TailwindCSS 互換のあるライブラリで、js からプロセッサーやパーサーを扱うことができる。
 
@@ -26,7 +26,7 @@ tsx を `renderToString` する点は dodai と同じで、吐き出した文字
 
 静的サイトジェネレーターを呼ぶと複雑なものに聞こえるが、要件によってはこれだけで済んでしまうというのが勉強できた。答えはいつでも API という形でそばにあった。
 
-まず前提として、マークアップは tsx で行うのがベターだろうという考え方がある。テンプレートを最大限型サポートしようとするとどうしても TS の世界に入る必要があり、特に準備もなく環境が整っている tsx が使いたいというのはとてもわかる。また、SFC ではないためテンプレートの変数化ができ、これは TailwindCSS のようなユーティリティファーストなライブラリと相性が良い(SFCに比べて)。
+まず前提として、マークアップは tsx で行うのがベターだろうという考え方がある。テンプレートを最大限型サポートしようとするとどうしても TS の世界に入る必要があり、特に準備もなく環境が整っている tsx が使いたいというのはとてもわかる。また、SFC ではないためテンプレートの変数化ができ、これは TailwindCSS のようなユーティリティファーストなライブラリと相性が良い(SFC に比べて)。
 
 じゃあ Next とか、それこそ流行りの Astro とかでいいじゃないかとなるかもしれないが、必要な要件のみを洗い出した場合、 `tsx が使えて html になって静的ホスティングできれば良い` で済む場合が結構ある。 加えて、tsx を用いているならば meta よりのデータを json で管理しておけば十分みたいな要件も何もしなくてもクリアできる。コンテンツ自体は markdown で書いて適当に文字列に変換して `dangerouslySetInnerHTML` すれば良い。
 

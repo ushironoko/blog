@@ -16,7 +16,7 @@ const props = defineProps<{
           <div>
             <img
               alt=""
-              class="w-full"
+              class="w-full rounded-sm"
               width="252"
               height="164"
               :src="ogImageUrlOrigin(postData.title)"

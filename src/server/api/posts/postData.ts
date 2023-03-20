@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import remarkExternalLinks from 'remark-external-links';
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 
@@ -14,6 +15,10 @@ export default defineEventHandler(async (event) => {
   const matterResult = matter(fileContents);
 
   const processedContent = await remark()
+    .use(remarkExternalLinks, {
+      target: '_blank',
+      rel: ['noopener', 'noreferrer'],
+    })
     .use(html)
     .process(matterResult.content);
   const contentHtml = processedContent.toString();

@@ -60,7 +60,7 @@ https://twitter.com/mattn_jp/status/1582562579536547840?s=20&t=xshH9nAMpRh52gCxq
 
 去年から継続。継続期間がすごいことになっています。やめる理由もないのでこのまま続けてみたい。
 
-https://i.gyazo.com/496e4068449ab79362d0831d0eb3e292.png
+![ニコニコ継続プレミアム11年](https://i.gyazo.com/496e4068449ab79362d0831d0eb3e292.png)
 
 ## [遠藤正明ファンクラブ](https://endohmasaaki-fc.com/)
 

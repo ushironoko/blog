@@ -9,14 +9,16 @@
     "fix": "prettier --write './**/*.{ts,vue,md}'"
   },
   "devDependencies": {
-    "@nuxtjs/google-fonts": "^3.0.0-1",
+    "@nuxtjs/google-fonts": "^3.0.0",
+    "@types/node": "^18.15.3",
     "autoprefixer": "^10.4.13",
     "date-fns": "^2.29.3",
     "gray-matter": "^4.0.3",
-    "nuxt": "3.0.0",
+    "nuxt": "3.3.1",
     "postcss": "^8.4.19",
     "prettier": "^2.7.1",
     "remark": "^14.0.2",
+    "remark-external-links": "^9.0.1",
     "remark-html": "^15.0.1",
     "tailwindcss": "^3.2.4"
   }
