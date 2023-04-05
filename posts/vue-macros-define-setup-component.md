@@ -183,4 +183,4 @@ VueMacros は実験的機能の寄せ集めなので、プロダクションで�
 
 > The web is not a zero-sum game. I dislike the narrative that frameworks will either win or lose, and that you need to "place a bet." Indeed, it is easy to fall into this mindset if everything is VC-backed, but not everything is, nor does it have to be.
 
-[https://twitter.com/youyuxi/status/1643555701497937920](https://twitter.com/youyuxi/status/1643555701497937920)
+[Evan You - Twitter](https://twitter.com/youyuxi/status/1643555701497937920)
