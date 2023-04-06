@@ -28,7 +28,7 @@ useHead({
     },
     {
       name: 'twitter:title',
-      content: data.value?.title ?? 'ushironoko.me',
+      content: postTitle ?? 'ushironoko.me',
     },
     {
       name: 'twitter:image',
@@ -58,11 +58,11 @@ useHead({
     },
     {
       property: 'og:title',
-      content: data.value?.title ?? 'ushironoko.me',
+      content: postTitle ?? 'ushironoko.me',
     },
     {
       property: 'og:site_name',
-      content: data.value?.title ?? 'ushironoko.me',
+      content: postTitle ?? 'ushironoko.me',
     },
     {
       property: 'og:url',
