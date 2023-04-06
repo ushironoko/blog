@@ -1,5 +1,5 @@
 html {
-  @apply dark:bg-black dark:text-white;
+  @apply dark:bg-[#15202B] dark:text-[rgb(247,249,249)];
 }
 
 ul {
