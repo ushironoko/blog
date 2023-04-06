@@ -62,7 +62,7 @@ useHead({
     },
     {
       property: 'og:site_name',
-      content: postTitle,
+      content: 'ushironoko.me',
     },
     {
       property: 'og:url',
