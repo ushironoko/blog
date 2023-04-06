@@ -7,7 +7,7 @@ const { data } = useFetch(`/api/posts/postData?id=${encodeURIComponent(id)}`, {
   key: id,
 });
 
-const postTitle = data.value?.title;
+const postTitle = data.value?.title ?? 'ushironoko.me';
 
 const description = data.value?.contentHtml
   .match(/^\<p\>.*\<\/p\>/g)
@@ -16,7 +16,7 @@ const description = data.value?.contentHtml
   .replace('</p>', '');
 
 useHead({
-  title: postTitle ?? 'ushironoko.me',
+  title: postTitle,
   meta: [
     {
       name: 'twitter:card',
@@ -28,7 +28,7 @@ useHead({
     },
     {
       name: 'twitter:title',
-      content: postTitle ?? 'ushironoko.me',
+      content: postTitle,
     },
     {
       name: 'twitter:image',
@@ -58,11 +58,11 @@ useHead({
     },
     {
       property: 'og:title',
-      content: postTitle ?? 'ushironoko.me',
+      content: postTitle,
     },
     {
       property: 'og:site_name',
-      content: postTitle ?? 'ushironoko.me',
+      content: postTitle,
     },
     {
       property: 'og:url',
