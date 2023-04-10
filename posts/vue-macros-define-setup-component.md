@@ -23,7 +23,7 @@ publishedAt: 2023-04-05
 VueMacros と TSX を利用するには、ライブラリをいくつかインストールして設定する必要がある。
 
 ```sh
-yarn add -D unplugin-vue-macros @vitejs/plugin-vue-jsx"
+yarn add -D unplugin-vue-macros @vitejs/plugin-vue-jsx
 ```
 
 `vite.config.ts` を編集する。

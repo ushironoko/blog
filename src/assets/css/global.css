@@ -37,8 +37,6 @@ h3 {
 
 pre {
   padding: 8px;
-  background-color: #eee;
-  @apply dark:bg-gray-900 dark:text-white bg-gray-100 text-black;
   border-radius: 4px;
   white-space: pre-wrap;
 }

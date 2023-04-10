@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import 'highlight.js/styles/monokai.css';
 const { params, fullPath } = useRoute();
 
 const id = Array.isArray(params.id) ? params.id[0] : params.id;
