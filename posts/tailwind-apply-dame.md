@@ -1,5 +1,5 @@
 ---
-title: TailwindCSSのapplyは何が悪いなのか
+title: TailwindCSSのapplyは何が悪いのか
 description:
 publishedAt: 2023-04-19
 ---
