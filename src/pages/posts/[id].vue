@@ -27,7 +27,7 @@ useHead({
   meta: [
     {
       property: 'og:url',
-      content: `https://ushironoko.me/${fullPath}` ?? 'https://ushironoko.me/',
+      content: `https://ushironoko.me${fullPath}` ?? 'https://ushironoko.me/',
     },
     {
       property: 'og:image',
