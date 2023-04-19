@@ -1,4 +1,11 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
+import path from 'path';
+import fs from 'fs';
+
+const postsDirectory = path.join(process.cwd(), 'posts');
+const fileNames = fs.readdirSync(postsDirectory);
+const routes = fileNames.map((fileName) => `/${fileName}`)
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -56,5 +63,11 @@ export default defineNuxtConfig({
         types: ['@types/node'],
       },
     },
-  }
+  },
+  nitro: {
+    prerender: {
+      crawlLinks: false,
+      routes,
+    },
+  },
 });
