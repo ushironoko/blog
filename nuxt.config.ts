@@ -56,10 +56,5 @@ export default defineNuxtConfig({
         types: ['@types/node'],
       },
     },
-  },
-  nitro: {
-    prerender: {
-      crawlLinks: false,
-    }
   }
 });
