@@ -5,6 +5,7 @@ import { remark } from 'remark';
 import remarkExternalLinks from 'remark-external-links';
 import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
+import rehypeSanitize from 'rehype-sanitize';
 import rehypeHighlight from 'rehype-highlight';
 import rehypeStringify from 'rehype-stringify';
 
@@ -24,6 +25,7 @@ export default defineEventHandler(async (event) => {
     })
     .use(remarkParse)
     .use(remarkRehype)
+    .use(rehypeSanitize)
     .use(rehypeHighlight)
     .use(rehypeStringify)
     .process(matterResult.content);
