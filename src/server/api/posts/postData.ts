@@ -2,7 +2,6 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
-import html from 'remark-html';
 import remarkExternalLinks from 'remark-external-links';
 import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
@@ -23,7 +22,6 @@ export default defineEventHandler(async (event) => {
       target: '_blank',
       rel: ['noopener', 'noreferrer'],
     })
-    .use(html)
     .use(remarkParse)
     .use(remarkRehype)
     .use(rehypeHighlight)
