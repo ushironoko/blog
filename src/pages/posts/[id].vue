@@ -14,39 +14,28 @@ const description = data.value?.contentHtml
   .match(/^\<p\>.*\<\/p\>/g)
   ?.toString()
   .replace('<p>', '')
-  .replace('</p>', '');
+  .replace('</p>', '')
+  .replace('<code>', '')
+  .replace('</code>', '');
+
+const ogUrl = `https://og-image-noko-ushiro.vercel.app/${
+  data?.value?.title ?? 'ushironoko.me'
+}?theme=light&md=1&fontSize=95px`;
 
 useHead({
   title: postTitle,
   meta: [
     {
-      name: 'twitter:card',
-      content: 'summary_large_image',
+      property: 'og:url',
+      content: `https://ushironoko.me/${fullPath}` ?? 'https://ushironoko.me/',
     },
     {
-      name: 'twitter:site',
-      content: '@ushirono_noko',
+      property: 'og:image',
+      content: `${ogUrl}` ?? '',
     },
     {
-      name: 'twitter:title',
-      content: postTitle,
-    },
-    {
-      name: 'twitter:image',
-      content:
-        `https://og-image-noko-ushiro.vercel.app/${
-          data?.value?.title ?? 'ushironoko.me'
-        }?theme=light&md=1&fontSize=95px` ?? '',
-    },
-    {
-      name: 'twitter:description',
-      content:
-        description ?? 'ushironokoのブログです。技術・ゲーム・趣味・仕事など。',
-    },
-    {
-      name: 'description',
-      content:
-        description ?? 'ushironokoのブログです。技術・ゲーム・趣味・仕事など。',
+      property: 'og:image:secure_url',
+      content: `${ogUrl}` ?? '',
     },
     {
       name: 'og:description',
@@ -66,22 +55,16 @@ useHead({
       content: 'ushironoko.me',
     },
     {
-      property: 'og:url',
-      content: `https://ushironoko.me/${fullPath}` ?? 'https://ushironoko.me/',
+      name: 'twitter:card',
+      content: 'summary_large_image',
     },
     {
-      property: 'og:image',
-      content:
-        `https://og-image-noko-ushiro.vercel.app/${
-          data?.value?.title ?? 'ushironoko.me'
-        }?theme=light&md=1&fontSize=95px` ?? '',
+      name: 'twitter:site',
+      content: '@ushirono_noko',
     },
     {
-      property: 'og:image:secure_url',
-      content:
-        `https://og-image-noko-ushiro.vercel.app/${
-          data?.value?.title ?? 'ushironoko.me'
-        }?theme=light&md=1&fontSize=95px` ?? '',
+      name: 'twitter:title',
+      content: postTitle,
     },
   ],
 });
