@@ -1,7 +1,7 @@
 ---
 title: generateフックでブログにツイートを埋め込む
 description:
-publishedAt: '2022-05-24'
+publishedAt: 2022-05-24
 ---
 
 ブログにツイートを自動で埋め込みできるようにした。markdown の中にツイートへの直リンクがある場合、以下のように表示される。
