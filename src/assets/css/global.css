@@ -16,8 +16,7 @@ p,
 h1,
 h2,
 h3,
-li,
-pre {
+li {
   font-family: 'Noto+Sans+JP';
   font-size: 18px;
   letter-spacing: 0.04em;
@@ -36,9 +35,14 @@ h3 {
 }
 
 pre {
+  font-family: 'Noto+Sans+JP';
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  line-height: 24px;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
   padding: 8px;
   border-radius: 4px;
-  white-space: pre-wrap;
 }
 
 p > a {
