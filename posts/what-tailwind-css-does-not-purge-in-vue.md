@@ -18,36 +18,36 @@ https://tailwindcss.com/docs/optimizing-for-production
 
 ドキュメント通りに読み解くと、ビルド実行前にこの正規表現にかからなかったユーティリティクラスは使われていないと判断されパージされてしまうのではないかと不安になった。しかし、以下のような例でもユーティリティクラスはパージされず動作していた。
 
-```vue
+```html
 <template>
   <p :class="color">not purge</p>
 </template>
 
 <script setup>
-const color = 'text-green-500';
+  const color = 'text-green-500';
 </script>
 ```
 
 上記の例から察するに、Vue では js 実行後のテンプレートに対して正規表現がかけられているのだろうと思った。しかし、実際はもっと雑な（公式表現を借りるとナイーブな）実装になっているようだ。
 
-```vue
+```html
 <template>
   <p class="text-red-500">パージされない</p>
   <span>text-blue-500</span> ←パージされない
 </template>
 <script setup>
-const color = 'text-green-500'; // パージされない
+  const color = 'text-green-500'; // パージされない
 </script>
 ```
 
 つまり、tailwind は SFC ファイル全体を見てユーティリティクラスに完全一致する文字列が存在すれば、そのクラスをパージしない。処理自体は間違いなく js 実行前に行われているので以下の例では検知できずにパージされる。
 
-```vue
+```html
 <template>
   <p :class="`text-${color}-500`">そのクラス、消えるよ</p>
 </template>
 <script setup>
-const color = 'green';
+  const color = 'green';
 </script>
 ```
 
@@ -59,13 +59,13 @@ https://github.com/windicss/vue-windicss-preprocess
 
 しかし、windicss の場合も scirpt ブロック側で定義しテンプレートで参照していないユーティリティクラスはパージ対象にならないようだった。
 
-```vue
+```html
 <template>
   <p class="text-red-500">not purge</p>
 </template>
 
 <script setup>
-const color = 'text-green-500';
+  const color = 'text-green-500';
 </script>
 ```
 
@@ -75,25 +75,25 @@ const color = 'text-green-500';
 
 tailwind をそのまま使った方
 
-```vue
+```html
 <template>
   <p :class="`text-green-${colorNumber}`">not purge</p>
 </template>
 
 <script setup>
-const colorNumber = '500';
+  const colorNumber = '500';
 </script>
 ```
 
 windicss
 
-```vue
+```html
 <template>
   <p :class="`text-green-${colorNumber}`">purged</p>
 </template>
 
 <script setup>
-const colorNumber = '500';
+  const colorNumber = '500';
 </script>
 ```
 

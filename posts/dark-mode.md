@@ -19,7 +19,7 @@ module.exports = {
 
 - layouts でダークモード時の背景色＆文字色を指定
 
-```vue
+```html
 <template>
   <div class="dark:bg-black dark:text-white">
     <div class="max-w-screen-sm px-4 py-4 mx-auto text-base leading-loose">
@@ -37,7 +37,7 @@ module.exports = {
   - `@apply` を使っているが DOM 構造を縛らないので許容としている（本来要素そのものにスタイルを当てるべきではない）
   - twitter シェア用のボタンカラーを `dark:` で対応させるために currentColor を指定
 
-```vue
+```css
 <style lang="postcss" scoped>
 ::v-deep blockquote {
   @apply p-2;

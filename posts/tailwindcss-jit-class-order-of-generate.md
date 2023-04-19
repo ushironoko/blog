@@ -18,54 +18,52 @@ https://github.com/croutonn/tailwindcss-pseudo-elements
 
 以下のようなファイルで試した。元々 jit モードを指定せずに動作していた（色々省略してます）。
 
-```vue
+```html
 <template>
   <div
     class="relative inline-block w-full overflow-hidden border-2 border-gray-300 border-solid rounded-md text-gray-80 h-14"
     :class="`${focusedClass}`"
   >
     <label class="relative flex items-center h-full px-2 cursor-text">
-      <span class="absolute text-gray-400 select-none">
-        {{ label }}
-      </span>
+      <span class="absolute text-gray-400 select-none"> {{ label }} </span>
       <input v-on="listeners" />
     </label>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, computed, PropType } from 'vue';
-import { useFocus } from '../../composables/eventHandler';
+  import { defineComponent, computed, PropType } from 'vue';
+  import { useFocus } from '../../composables/eventHandler';
 
-export default defineComponent({
-  props: {
-    label: {
-      type: String,
-      default: '',
+  export default defineComponent({
+    props: {
+      label: {
+        type: String,
+        default: '',
+      },
     },
-  },
-  emits: {
-    focus: (event: Event) => true,
-  },
-  setup(props) {
-    const { isFocus, handleFocus } = useFocus({ eventName: 'focus' });
+    emits: {
+      focus: (event: Event) => true,
+    },
+    setup(props) {
+      const { isFocus, handleFocus } = useFocus({ eventName: 'focus' });
 
-    const focusedClass = computed(() =>
-      isFocus.value
-        ? 'border-blue-700 ring-4 ring-blue-100 transition duration-100'
-        : ''
-    );
+      const focusedClass = computed(() =>
+        isFocus.value
+          ? 'border-blue-700 ring-4 ring-blue-100 transition duration-100'
+          : ''
+      );
 
-    const listeners = computed(() => ({
-      focus: handleFocus,
-    }));
+      const listeners = computed(() => ({
+        focus: handleFocus,
+      }));
 
-    return {
-      focusedClass,
-      listeners,
-    };
-  },
-});
+      return {
+        focusedClass,
+        listeners,
+      };
+    },
+  });
 </script>
 ```
 

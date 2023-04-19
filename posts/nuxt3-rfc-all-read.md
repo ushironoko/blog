@@ -1,12 +1,12 @@
 ---
 title: Nuxt3 rfc ぜんぶ読む
-description: Nuxt3 rfc ぜんぶ読む
+description:
 publishedAt: 2021-11-12
 ---
 
 Nuxt3 のリポジトリが公開され、ディスカッションに記載されている rfc を読むことができるようになった。
 
-https://github.com/nuxt/framework/discussions/categories/rfcs
+[https://github.com/nuxt/framework/discussions/categories/rfcs](https://github.com/nuxt/framework/discussions/categories/rfcs)
 
 せっかくだし全部読んでみる。
 
@@ -72,10 +72,10 @@ useMeta({
 
 または Nuxt3 から利用できるようになった [Meta コンポーネント](https://github.com/nuxt/framework/blob/850ef69a878294bb2854fdfe07d1d8bc71d0d52d/packages/nuxt3/src/meta/runtime/components.ts)を使う。
 
-```vue
+```html
 <template>
   <div>
-    <Meta :lang="article.lang" />
+    <meta :lang="article.lang" />
   </div>
 </template>
 ```
@@ -97,7 +97,7 @@ useMeta({
 ぶっちゃけイメージが湧いていない。ディスカッションが開かれたのも最近なのであったまってきたらまた覗いてみよう。
 
 余談だが Nuxt がデフォルトで持っているページは Nuxt Design というところで管理されているのを知った。
-https://github.com/nuxt/design
+[https://github.com/nuxt/design](https://github.com/nuxt/design)
 
 ## [Moving Nitro to standalone bundler](https://github.com/nuxt/framework/discussions/1690)
 
