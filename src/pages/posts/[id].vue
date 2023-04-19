@@ -4,9 +4,12 @@ const { params, fullPath } = useRoute();
 
 const id = Array.isArray(params.id) ? params.id[0] : params.id;
 
-const { data } = useFetch(`/api/posts/postData?id=${encodeURIComponent(id)}`, {
-  key: id,
-});
+const { data } = await useFetch(
+  `/api/posts/postData?id=${encodeURIComponent(id)}`,
+  {
+    key: id,
+  }
+);
 
 const postTitle = data.value?.title ?? 'ushironoko.me';
 
