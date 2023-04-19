@@ -84,7 +84,7 @@ generate: {
               if (aTag.parentElement && aTag.href === url) {
                 replaceList.push({
                   target: aTag.parentElement.outerHTML,
-                  staticHtml: `${staticHtml}<p><a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a></p>`,
+                  staticHtml: `${staticHtml}<p><a href="a" target="_blank" rel="noopener noreferrer">${url}</a></p>`,
                 })
               }
             })
