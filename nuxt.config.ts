@@ -1,10 +1,4 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
-import path from 'path';
-import fs from 'fs';
-
-const postsDirectory = path.join(process.cwd(), 'posts');
-const fileNames = fs.readdirSync(postsDirectory);
-const routes = fileNames.map((fileName) => `/${fileName}`)
 
 export default defineNuxtConfig({
   app: {
@@ -66,8 +60,8 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      crawlLinks: false,
-      routes,
+      // クローラーがコードブロック内のherfを見に行くのを防ぐ
+      ignore: ['/posts/%3Cspan%20class=', '/posts/$%7Burl%7D'],
     },
   },
 });
